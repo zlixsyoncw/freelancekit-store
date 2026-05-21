@@ -26,6 +26,7 @@ export const SITE = {
       { label: 'Rate Calculator', href: '/tools/rate-calculator' },
       { label: 'Compare', href: '/compare' },
       { label: 'Resources', href: '/resources' },
+      { label: 'Affiliate Program', href: '/affiliate' },
       { label: 'Blog', href: '/blog' },
     ],
     Legal: [

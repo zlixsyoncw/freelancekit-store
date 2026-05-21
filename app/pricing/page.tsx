@@ -104,8 +104,20 @@ const FAQ = [
   },
 ]
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function PricingPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
       {/* Header */}
       <div className="text-center mb-16">
@@ -217,5 +229,6 @@ export default function PricingPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }
