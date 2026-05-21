@@ -21,11 +21,12 @@ export const SITE = {
       { label: 'Complete Bundle', href: '/shop/complete-bundle' },
     ],
     Resources: [
+      { label: 'Free Notion Template', href: '/free' },
       { label: 'Free Tools', href: '/tools' },
       { label: 'Rate Calculator', href: '/tools/rate-calculator' },
+      { label: 'Compare', href: '/compare' },
       { label: 'Resources', href: '/resources' },
       { label: 'Blog', href: '/blog' },
-      { label: 'About', href: '/about' },
     ],
     Legal: [
       { label: 'Privacy Policy', href: '/privacy' },
