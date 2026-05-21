@@ -9,9 +9,9 @@ export const SITE = {
   gumroadProfile: 'https://freelancekit.gumroad.com', // TODO: Replace with your Gumroad profile URL
   nav: [
     { label: 'Shop', href: '/shop' },
+    { label: 'Pricing', href: '/pricing' },
     { label: 'Tools', href: '/tools' },
     { label: 'Blog', href: '/blog' },
-    { label: 'About', href: '/about' },
   ],
   footerLinks: {
     Products: [

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreelanceKit Email Nurture Sequence — Copy & Paste Ready</title>
+  <style>
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #faf9f7; color: #1a1523;
+      line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+    h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+    h2 { font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 8px;
+      padding-top: 48px; border-top: 2px solid #e8e3f0; }
+    h3 { font-size: 16px; font-weight: 700; color: #7e22ce; margin-bottom: 4px; }
+    .meta { font-size: 13px; color: #9ca3af; margin-bottom: 20px; }
+    .email-preview { background: white; border: 1px solid #e8e3f0; border-radius: 12px;
+      padding: 32px; margin-top: 16px; }
+    .email-preview pre { font-family: inherit; white-space: pre-wrap; font-size: 15px;
+      color: #374151; line-height: 1.75; margin: 0; }
+    .tip { background: #faf5ff; border-left: 3px solid #7e22ce; padding: 14px 18px;
+      border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; color: #4b3f72; }
+    .setup { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px;
+      padding: 20px 24px; margin: 24px 0; font-size: 14px; }
+    .setup strong { color: #166534; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<h1>FreelanceKit Email Nurture Sequence</h1>
+<p style="font-size:17px;color:#6b7280;">Copy-paste ready emails for your welcome sequence. Set these up in Resend, ConvertKit, or Beehiiv once — they run automatically for every new subscriber.</p>
+
+<div class="setup">
+  <strong>Setup: How to use this file</strong><br/>
+  Each email is a separate message in your email automation sequence. In your email platform:
+  <ol style="margin:8px 0 0 0;padding-left:20px;">
+    <li>Create a new sequence triggered by the "New Subscriber" event</li>
+    <li>Add each email below as a step, with the delay shown (Day 0, Day 3, Day 7, etc.)</li>
+    <li>Replace all [BRACKETS] with your actual values</li>
+    <li>Set reply-to to your actual email so replies come to you</li>
+  </ol>
+</div>
+
+<!-- EMAIL 1 -->
+<h2>Email 1 — Day 0 (Immediate: the welcome + free template)</h2>
+<div class="meta">Trigger: User subscribes via any form · Delay: Immediately · Subject line options below</div>
+
+<h3>Subject line options (A/B test these):</h3>
+<ul style="font-size:14px;color:#6b7280;">
+  <li>Your free Notion freelance template is here</li>
+  <li>Here's the system (+ your free template)</li>
+  <li>Welcome — your template link is inside</li>
+</ul>
+
+<div class="email-preview">
+  <pre>Hi {{first_name | default: "there"}},
+
+Welcome — and thank you for subscribing.
+
+Here's your free Notion starter template:
+
+👉 [PASTE YOUR NOTION TEMPLATE LINK HERE]
+
+To use it: click the link → click "Duplicate" in the top right → it copies to your Notion workspace.
+
+The template includes:
+• Client list (Prospect → Active → Complete)
+• Invoice tracker with paid/outstanding view
+• Daily task view filtered by project
+• Weekly review template
+
+Setup takes 15–20 minutes. Most people find it useful immediately.
+
+---
+
+Over the next few weeks, I'll share what I've learned from interviewing 200+ freelancers earning between $60K and $400K/year.
+
+The consistent theme: the profitable ones run systems. Not complicated ones — simple, consistent ones. That's what this list is about.
+
+Reply to this email any time. I read everything.
+
+— [YOUR NAME]
+FreelanceKit
+
+P.S. If you want the full system with a linked CRM, project hub, profitability calculator, and client portal, that's the Freelancer OS ($29 one-time): https://freelancekit.co/shop/freelancer-os</pre>
+</div>
+
+<div class="tip">
+  <strong>Tip:</strong> The P.S. line has historically high click rates — it's the last thing people read and feels personal. Keep it conversational, not salesy.
+</div>
+
+<!-- EMAIL 2 -->
+<h2>Email 2 — Day 3 (Rate Calculator + Pricing lesson)</h2>
+<div class="meta">Delay: 3 days after Day 0 · Subject line options below</div>
+
+<h3>Subject line options:</h3>
+<ul style="font-size:14px;color:#6b7280;">
+  <li>Are you undercharging? (quick check)</li>
+  <li>How to know if your freelance rate is too low</li>
+  <li>The uncomfortable math most freelancers avoid</li>
+</ul>
+
+<div class="email-preview">
+  <pre>Hi {{first_name | default: "there"}},
+
+Quick question: do you actually know your minimum viable hourly rate?
+
+Not the rate you charge — the rate you *need* to charge to hit your income goal after taxes, overhead, and realistic billable hours.
+
+Most freelancers don't know this number. They pick a rate that "feels right" or copy what they've seen others charge. The result: they work full-time hours and earn part-time income.
+
+Here's how to calculate it:
+
+Annual income goal ÷ (1 − tax rate) = gross income needed
+Gross income needed × (1 + overhead %) = gross revenue needed
+Gross revenue needed ÷ (working weeks × billable hrs/week) = your minimum hourly rate
+
+If the math feels tedious, I built a free calculator:
+https://freelancekit.co/tools/rate-calculator
+
+Plug in your numbers. Take the "Recommended" rate (which adds a 25% buffer for slow months and negotiation room). That's your floor — the rate below which you're slowly losing money.
+
+The uncomfortable finding for most people: their current rate is the "minimum," not the "recommended."
+
+More on pricing next week.
+
+— [YOUR NAME]</pre>
+</div>
+
+<!-- EMAIL 3 -->
+<h2>Email 3 — Day 7 (Client management lesson)</h2>
+<div class="meta">Delay: 7 days after Day 0</div>
+
+<h3>Subject line options:</h3>
+<ul style="font-size:14px;color:#6b7280;">
+  <li>The email that kills 80% of "any updates?" messages</li>
+  <li>One thing that changed how my clients treat me</li>
+  <li>What high-earning freelancers do differently with clients</li>
+</ul>
+
+<div class="email-preview">
+  <pre>Hi {{first_name | default: "there"}},
+
+The "any updates?" email.
+
+If you freelance for more than a month, you'll get this. Clients asking where the project stands, whether you've started, when they'll see something.
+
+Every one of these emails costs you 5–10 minutes of lost focus. They happen because clients feel uncertain.
+
+The fix takes 20 minutes to set up once:
+
+Create a shared Notion page for each client. On it: the project name, current stage, what's in progress, and what they're waiting on. Give them the link. Update it once a week.
+
+That's it.
+
+When a client has a live view of their project, the check-in emails stop. Not because you asked them to stop emailing — because they have what they were looking for.
+
+Bonus effect: clients who feel informed tend to give better feedback. They're not anxious, so they're more thoughtful.
+
+The Freelancer OS includes a client portal template you can duplicate per client in about 5 minutes. You can find it here:
+https://freelancekit.co/shop/freelancer-os
+
+Or if you want to build your own, the structure is:
+• Project name + stage (Kickoff / In Progress / Review / Complete)
+• What I'm working on this week
+• What's waiting on you (client action items)
+• Recent completions
+
+Nothing fancy. Just visible.
+
+— [YOUR NAME]</pre>
+</div>
+
+<!-- EMAIL 4 -->
+<h2>Email 4 — Day 14 (Proposal/sales lesson)</h2>
+<div class="meta">Delay: 14 days after Day 0</div>
+
+<h3>Subject line options:</h3>
+<ul style="font-size:14px;color:#6b7280;">
+  <li>The proposal mistake that kills deals silently</li>
+  <li>Why three prices close more than one</li>
+  <li>How to structure a proposal that wins</li>
+</ul>
+
+<div class="email-preview">
+  <pre>Hi {{first_name | default: "there"}},
+
+Most freelance proposals start with "About Me."
+
+That's a mistake.
+
+The client already knows who you are — they found you somehow and asked for a proposal. What they don't know yet is whether you understand their problem.
+
+The first section of a winning proposal isn't your bio. It's their problem, described accurately.
+
+One paragraph. What are they trying to solve? What's not working? What do they stand to gain?
+
+When a client reads their own problem described back to them with precision, they stop looking for reasons to hesitate. You've already demonstrated the thing they hired you to prove: that you understand their situation.
+
+Three other things that move proposals from "maybe" to "yes":
+
+1. Three price tiers instead of one price. When you give one number, the decision is "yes or no." When you give three (Essential / Recommended / Premium), the decision becomes "which one" — and most people choose the middle. This alone increased my close rate significantly.
+
+2. Explicit scope exclusions. "What's not included" is as important as what is. It's the section that prevents the "but I thought..." conversations three weeks into a project.
+
+3. One clear next action at the end. Not "let me know if you have questions" — "reply to this email to accept the Recommended package and I'll send the contract and deposit invoice."
+
+Full proposal walkthrough here if you want the details:
+https://freelancekit.co/blog/how-to-write-a-freelance-proposal
+
+The Client Onboarding Bundle includes a ready-to-use proposal template built around this structure:
+https://freelancekit.co/shop/client-onboarding-bundle
+
+— [YOUR NAME]</pre>
+</div>
+
+<!-- EMAIL 5 -->
+<h2>Email 5 — Day 21 (Soft sell — Complete Bundle)</h2>
+<div class="meta">Delay: 21 days after Day 0 · This is the "soft sell" email — value-first, offer at the end</div>
+
+<h3>Subject line options:</h3>
+<ul style="font-size:14px;color:#6b7280;">
+  <li>The system behind a $150K+ freelance year</li>
+  <li>What separates the profitable ones (in my research)</li>
+  <li>Five systems every high-earning freelancer has</li>
+</ul>
+
+<div class="email-preview">
+  <pre>Hi {{first_name | default: "there"}},
+
+After spending months interviewing freelancers earning between $60K and $400K/year, I noticed five things they all had in common.
+
+None of them were revolutionary. But most freelancers had none of them.
+
+**1. A real CRM.** Not a spreadsheet they never opened — a database with a status field, a last-contact date, and a follow-up reminder. The freelancers who followed up consistently closed 3x more leads.
+
+**2. A client portal.** A shared page that showed clients where their project stood — so "any updates?" emails stopped happening. Every high-earner I interviewed had some version of this.
+
+**3. A standard proposal structure.** Not starting from scratch every time. A template with a problem framing, scope block, three-tier pricing, and timeline. They customized it — they didn't recreate it.
+
+**4. Invoice tracking that told them their actual hourly rate.** When you link time logged → hours invested → contract value, you find out which clients and project types actually make money. Most freelancers don't know this number.
+
+**5. A weekly review ritual.** 15 minutes every Friday. What shipped, what's stalled, what's unpaid, what's next week's priority. Small habit, compounding effect.
+
+These five things aren't hard to build. They're just not built by default.
+
+Everything I just described is in the FreelanceKit Complete Bundle — the Notion OS, the client onboarding documents, and the AI prompt pack that helps with every step.
+
+One-time $49. 30-day guarantee. No subscription:
+https://freelancekit.co/shop/complete-bundle
+
+Or if you're not sure, the free tools are a good place to start:
+https://freelancekit.co/free
+
+— [YOUR NAME]
+
+P.S. If you have questions about which product is right for your situation, just reply. I'm happy to help.</pre>
+</div>
+
+<div class="tip">
+  <strong>After this sequence:</strong> Switch to a weekly newsletter format. Send one valuable insight per week (250–400 words). Occasional product mentions — no more than one in five emails. The list is a long-term asset; don't burn it with over-promotion.
+</div>
+
+<!-- SETUP CHECKLIST -->
+<h2>Setup Checklist</h2>
+<div class="setup">
+  <strong>Before activating this sequence, confirm:</strong>
+  <ul style="margin:8px 0 0 0;padding-left:20px;">
+    <li>☐ Replace all <code>[BRACKETS]</code> with actual content</li>
+    <li>☐ Add your real Notion free template link (Email 1)</li>
+    <li>☐ Set From name to your personal name or brand name</li>
+    <li>☐ Set Reply-to to your actual email address</li>
+    <li>☐ Set unsubscribe link (required by CAN-SPAM / GDPR)</li>
+    <li>☐ Add your physical address to footer (required by CAN-SPAM)</li>
+    <li>☐ Send yourself a test of each email before activating</li>
+    <li>☐ Set up your free template in Notion and copy the share link</li>
+  </ul>
+</div>
+
+<!-- PLATFORM NOTES -->
+<h2>Platform Setup Notes</h2>
+<p style="font-size:15px;color:#6b7280;">Quick reference for setting up this sequence on popular email platforms:</p>
+
+<h3>Resend (free tier: 3,000 emails/mo)</h3>
+<p style="font-size:14px;color:#4a3f5c;">Create a Broadcast sequence. Set trigger to "Contact added to audience." Add each email as a step with the delay days. Use the <code>RESEND_API_KEY</code> in your .env file — your FreelanceKit site is already wired to Resend.</p>
+
+<h3>ConvertKit / Kit (free tier: 1,000 subscribers)</h3>
+<p style="font-size:14px;color:#4a3f5c;">Create an Automation. Trigger: "Subscriber joins form." Add "Email" steps with 3/7/14/21 day delays. Use plain-text style (no heavy templates) for better deliverability.</p>
+
+<h3>Beehiiv (free tier: 2,500 subscribers)</h3>
+<p style="font-size:14px;color:#4a3f5c;">Use the Automations feature. Trigger: "New subscriber." Add email steps. Beehiiv's built-in growth tools (referrals, boosts) can accelerate list growth beyond organic.</p>
+
+</body>
+</html>
