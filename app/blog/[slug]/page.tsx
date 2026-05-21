@@ -6,6 +6,51 @@ import { POSTS, getPost, formatDate } from '@/lib/blog'
 import { SITE } from '@/lib/site'
 import EmailCapture from '@/components/EmailCapture'
 
+const CATEGORY_CTA: Record<string, { heading: string; body: string; href: string; label: string }> = {
+  'Sales & Proposals': {
+    heading: 'Turn this into a system, not just knowledge.',
+    body: 'The Client Onboarding Bundle includes a ready-to-use proposal template with three-tier pricing, a contract, a welcome packet, and a kickoff doc — everything covered in this article, pre-built.',
+    href: '/shop/client-onboarding-bundle',
+    label: 'Get Client Onboarding Bundle — $19',
+  },
+  'Legal & Contracts': {
+    heading: 'Get a contract template that covers all of this.',
+    body: 'The Client Onboarding Bundle includes a plain-English freelance contract template with all the clauses covered in this article — scope, revisions, kill fee, IP, and more.',
+    href: '/shop/client-onboarding-bundle',
+    label: 'Get Client Onboarding Bundle — $19',
+  },
+  Pricing: {
+    heading: 'Calculate your actual rate in 60 seconds.',
+    body: 'The free FreelanceKit Rate Calculator gives you your minimum, recommended, and premium hourly rate based on your income goal, hours, taxes, and overhead.',
+    href: '/tools/rate-calculator',
+    label: 'Try the free rate calculator',
+  },
+  'Client Management': {
+    heading: 'Build this system in Notion — today.',
+    body: 'The Freelancer OS includes the complete onboarding workflow: a client CRM, project hub with revision tracking, shareable portal, and invoice tracker — all linked and ready to use.',
+    href: '/shop/freelancer-os',
+    label: 'Get Freelancer OS — $29',
+  },
+  'Finance & Invoicing': {
+    heading: 'Track every invoice in one place.',
+    body: 'The Freelancer OS includes an invoice tracker with Outstanding / Paid views, revenue dashboard, and automated follow-up reminders — all in Notion.',
+    href: '/shop/freelancer-os',
+    label: 'Get Freelancer OS — $29',
+  },
+  'Tools & Productivity': {
+    heading: 'The tool that ties all of this together.',
+    body: 'The Freelancer OS is a complete Notion workspace: CRM, project hub, invoice tracker, and client portal — all linked. One-time $29, no subscription.',
+    href: '/shop/freelancer-os',
+    label: 'Get Freelancer OS — $29',
+  },
+  'Getting Started': {
+    heading: 'Start with the right infrastructure.',
+    body: 'The Complete Bundle gives you the Freelancer OS workspace, Client Onboarding Bundle, and AI Prompt Pack — everything you need to launch a professional freelance practice.',
+    href: '/shop/complete-bundle',
+    label: 'Get the Complete Bundle — $49',
+  },
+}
+
 interface Props {
   params: { slug: string }
 }
@@ -40,6 +85,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function BlogPostPage({ params }: Props) {
   const post = getPost(params.slug)
   if (!post) notFound()
+
+  const cta = CATEGORY_CTA[post.category] ?? {
+    heading: 'Ready to put this into practice?',
+    body: "FreelanceKit's Notion templates and AI prompt packs give you the systems to run a professional, profitable freelance business — starting today.",
+    href: '/shop',
+    label: 'Browse products',
+  }
 
   const allSorted = [...POSTS].sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -116,20 +168,15 @@ export default function BlogPostPage({ params }: Props) {
           ))}
         </div>
 
-        {/* CTA to shop */}
+        {/* CTA to shop — category-specific */}
         <div className="mt-12 bg-brand-50 border border-brand-200 rounded-2xl p-8">
-          <h3 className="font-display font-bold text-ink text-xl mb-2">
-            Ready to put this into practice?
-          </h3>
-          <p className="text-sand-600 text-sm mb-5">
-            FreelanceKit&apos;s Notion templates and AI prompt packs give you the systems to run a
-            professional, profitable freelance business — starting today.
-          </p>
+          <h3 className="font-display font-bold text-ink text-xl mb-2">{cta.heading}</h3>
+          <p className="text-sand-600 text-sm mb-5">{cta.body}</p>
           <Link
-            href="/shop"
+            href={cta.href}
             className="inline-flex items-center gap-1.5 bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-colors"
           >
-            Browse products <ArrowRight className="w-4 h-4" />
+            {cta.label} <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
 

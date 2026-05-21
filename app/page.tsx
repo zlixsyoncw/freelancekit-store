@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Star, Shield, Zap, Users, BookOpen, Clock } from 'lucide-react'
+import { ArrowRight, Star, Shield, Zap, Users, BookOpen, Clock, DollarSign, Gift } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
 import EmailCapture from '@/components/EmailCapture'
 import { getFeaturedProducts } from '@/lib/products'
@@ -221,6 +221,54 @@ export default function HomePage() {
                 </div>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Free tools callout ───────────────────────────────────────────── */}
+      <section className="py-16 bg-white border-y border-sand-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="font-display text-3xl font-bold text-ink mb-2">Try before you buy</h2>
+            <p className="text-sand-500">Free tools that give you a taste of the system — no signup required.</p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6">
+            <Link
+              href="/tools/rate-calculator"
+              className="group flex items-start gap-5 bg-brand-50 border border-brand-200 rounded-2xl p-7 hover:border-brand-400 hover:shadow-md transition-all"
+            >
+              <div className="w-12 h-12 rounded-xl bg-brand-600 flex items-center justify-center flex-shrink-0">
+                <DollarSign className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-display font-bold text-ink">Freelance Rate Calculator</h3>
+                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">Free</span>
+                </div>
+                <p className="text-sand-500 text-sm mb-3">Enter your income goal, hours, and tax rate. Get your minimum, recommended, and premium hourly rates instantly.</p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 group-hover:gap-2.5 transition-all">
+                  Calculate my rate <ArrowRight className="w-3.5 h-3.5" />
+                </span>
+              </div>
+            </Link>
+            <Link
+              href="/free"
+              className="group flex items-start gap-5 bg-sand-50 border border-sand-200 rounded-2xl p-7 hover:border-brand-300 hover:shadow-md transition-all"
+            >
+              <div className="w-12 h-12 rounded-xl bg-amber-400 flex items-center justify-center flex-shrink-0">
+                <Gift className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-display font-bold text-ink">Free Notion Starter Template</h3>
+                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">Free</span>
+                </div>
+                <p className="text-sand-500 text-sm mb-3">Client list, invoice tracker, and weekly review template — duplicated to your Notion workspace in under 15 minutes.</p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 group-hover:gap-2.5 transition-all">
+                  Get the free template <ArrowRight className="w-3.5 h-3.5" />
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
