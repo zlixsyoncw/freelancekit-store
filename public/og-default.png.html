@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- This file generates the OG image. Open in browser at 1200x630, screenshot, save as og-default.png -->
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #0f0720;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .bg-orb {
+    position: absolute; border-radius: 50%;
+    background: radial-gradient(circle, #7e22ce55, transparent 70%);
+  }
+  .orb1 { width: 600px; height: 600px; top: -200px; right: -100px; }
+  .orb2 { width: 400px; height: 400px; bottom: -150px; left: -50px; background: radial-gradient(circle, #f59e0b33, transparent 70%); }
+  .content {
+    position: relative; z-index: 10;
+    display: flex; flex-direction: column; align-items: flex-start;
+    padding: 80px; width: 100%;
+  }
+  .badge {
+    background: #7e22ce; color: white; font-size: 14px; font-weight: 700;
+    padding: 6px 16px; border-radius: 100px; margin-bottom: 28px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  h1 {
+    font-size: 68px; font-weight: 800; color: white;
+    line-height: 1.05; max-width: 800px; margin-bottom: 24px;
+  }
+  h1 span { color: #f59e0b; }
+  p {
+    font-size: 24px; color: #c4b5fd; max-width: 640px; line-height: 1.5; margin-bottom: 48px;
+  }
+  .products {
+    display: flex; gap: 16px;
+  }
+  .product-pill {
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.8); font-size: 15px; font-weight: 600;
+    padding: 10px 20px; border-radius: 100px;
+  }
+  .logo {
+    position: absolute; top: 48px; right: 80px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .logo-icon {
+    width: 44px; height: 44px; background: #7e22ce;
+    border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  }
+  .logo-text { color: white; font-size: 22px; font-weight: 800; }
+</style>
+</head>
+<body>
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="logo">
+    <div class="logo-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="6" width="12" height="2" rx="1" fill="white"/>
+        <rect x="3" y="11" width="8" height="2" rx="1" fill="white"/>
+        <rect x="3" y="16" width="10" height="2" rx="1" fill="white"/>
+      </svg>
+    </div>
+    <span class="logo-text">FreelanceKit</span>
+  </div>
+  <div class="content">
+    <div class="badge">Digital Products</div>
+    <h1>The Complete Business OS<br>for <span>Freelancers.</span></h1>
+    <p>Notion templates and AI prompts that help you land clients, deliver great work, and get paid.</p>
+    <div class="products">
+      <div class="product-pill">Freelancer OS — $29</div>
+      <div class="product-pill">AI Prompt Pack — $17</div>
+      <div class="product-pill">Full Bundle — $49</div>
+    </div>
+  </div>
+</body>
+</html>
