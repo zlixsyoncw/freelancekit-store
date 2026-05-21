@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreelanceKit — Client Onboarding Bundle</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: #faf9f7; color: #1a1523; line-height: 1.7; }
+    .cover {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a1523 0%, #2d1f3d 50%, #1e2d3d 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 60px 40px; color: white;
+    }
+    .cover-badge { font-family: 'Helvetica Neue', sans-serif; font-size: 11px; font-weight: 700;
+      letter-spacing: 0.15em; text-transform: uppercase; color: #f59e0b;
+      border: 1px solid rgba(245,158,11,0.4); padding: 6px 16px; border-radius: 100px; margin-bottom: 32px; }
+    .cover h1 { font-size: clamp(36px, 6vw, 64px); font-weight: 700; line-height: 1.15;
+      margin-bottom: 20px; letter-spacing: -0.02em; }
+    .cover h1 span { color: #f59e0b; }
+    .cover p { font-size: 20px; color: rgba(255,255,255,0.7); max-width: 540px; margin-bottom: 48px; }
+    .cover-meta { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
+    .cover-meta-item { text-align: center; }
+    .cover-meta-item .num { font-family: 'Helvetica Neue', sans-serif; font-size: 32px; font-weight: 700; color: #f59e0b; }
+    .cover-meta-item .label { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 4px; }
+
+    .page { max-width: 760px; margin: 0 auto; padding: 80px 40px; }
+    .section-label { font-family: 'Helvetica Neue', sans-serif; font-size: 10px; font-weight: 800;
+      letter-spacing: 0.2em; text-transform: uppercase; color: #7e22ce; margin-bottom: 16px; }
+    h2 { font-size: 32px; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.02em; }
+    h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; margin-top: 32px; }
+    p { color: #4a3f5c; margin-bottom: 16px; font-size: 17px; }
+    ul, ol { color: #4a3f5c; padding-left: 24px; margin-bottom: 20px; }
+    ul li, ol li { margin-bottom: 8px; font-size: 16px; }
+    strong { color: #1a1523; }
+    .divider { height: 1px; background: #e8e3f0; margin: 60px 0; }
+
+    .template-card {
+      background: white; border: 1px solid #e8e3f0; border-radius: 16px; padding: 32px;
+      margin-bottom: 24px; position: relative; overflow: hidden;
+    }
+    .template-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, #7e22ce, #a855f7);
+    }
+    .template-card .template-num {
+      font-family: 'Helvetica Neue', sans-serif; font-size: 11px; font-weight: 800;
+      letter-spacing: 0.15em; text-transform: uppercase; color: #7e22ce; margin-bottom: 12px;
+    }
+    .template-card h3 { margin-top: 0; font-size: 22px; }
+    .template-card .includes { margin-top: 20px; padding-top: 20px; border-top: 1px solid #f0edf7; }
+    .template-card .includes-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; color: #9ca3af; margin-bottom: 12px; }
+    .template-card .include-item { display: flex; align-items: flex-start; gap: 8px;
+      margin-bottom: 8px; color: #4a3f5c; font-size: 15px; }
+    .template-card .include-item::before { content: '✓'; color: #7e22ce; font-weight: 700;
+      flex-shrink: 0; margin-top: 1px; }
+
+    .tip-box { background: #faf5ff; border: 1px solid #e9d5ff; border-radius: 12px;
+      padding: 24px 28px; margin: 28px 0; }
+    .tip-box .tip-label { font-size: 11px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.15em; color: #7e22ce; margin-bottom: 10px; }
+    .tip-box p { color: #3b1f5c; font-size: 15px; margin-bottom: 0; }
+
+    .usage-block { background: #f8f7f5; border-radius: 12px; padding: 28px; margin: 24px 0; }
+    .usage-block pre { font-family: 'Courier New', monospace; font-size: 14px; color: #3b1f5c;
+      white-space: pre-wrap; line-height: 1.6; }
+
+    .timeline { list-style: none; padding: 0; margin: 0; }
+    .timeline li { display: flex; gap: 20px; margin-bottom: 28px; }
+    .timeline-marker { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%;
+      background: #7e22ce; color: white; display: flex; align-items: center; justify-content: center;
+      font-family: 'Helvetica Neue', sans-serif; font-weight: 700; font-size: 14px; margin-top: 4px; }
+    .timeline-content h4 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+    .timeline-content p { font-size: 15px; margin-bottom: 0; }
+
+    .cta-footer { background: linear-gradient(135deg, #7e22ce, #5b21b6); border-radius: 20px;
+      padding: 48px 40px; text-align: center; color: white; margin-top: 60px; }
+    .cta-footer h3 { font-size: 28px; margin-bottom: 12px; color: white; }
+    .cta-footer p { color: rgba(255,255,255,0.8); font-size: 17px; margin-bottom: 24px; }
+    .cta-footer a { display: inline-block; background: #f59e0b; color: #1a1523;
+      padding: 14px 32px; border-radius: 12px; font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 700; font-size: 15px; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .page { padding: 48px 24px; }
+      .cover { padding: 48px 24px; }
+      .cover-meta { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-badge">FreelanceKit — Client Onboarding Bundle</div>
+  <h1>Land Clients Like a <span>Pro</span> From Day One</h1>
+  <p>Every template, document, and system you need to onboard clients professionally — and keep them happy throughout the project.</p>
+  <div class="cover-meta">
+    <div class="cover-meta-item">
+      <div class="num">4</div>
+      <div class="label">Core templates</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="num">15+</div>
+      <div class="label">Customizable sections</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="num">∞</div>
+      <div class="label">Times you can use it</div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="page">
+  <div class="section-label">Introduction</div>
+  <h2>Why Client Onboarding Changes Everything</h2>
+  <p>The first two weeks of a client relationship set the tone for everything that follows. Clients who feel informed, organized, and confident in your process give better feedback, respect your scope, and refer you to others. Clients who feel uncertain compensate with control — endless check-ins, scope creep, and anxiety-driven requests.</p>
+  <p>This bundle gives you the exact documents and processes that experienced freelancers use to create the first experience. Once you set up the system, onboarding a new client takes under 30 minutes — and the results speak for themselves.</p>
+
+  <div class="tip-box">
+    <div class="tip-label">How to use this bundle</div>
+    <p>Work through the four templates in order: Proposal → Contract → Welcome Packet → Kickoff Document. Each one references the previous, so a client moves through a coherent, professional sequence from first contact to active project.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TEMPLATE 1: PROPOSAL -->
+  <div class="section-label">Template 01</div>
+  <div class="template-card">
+    <div class="template-num">Template 01 of 04</div>
+    <h3>The Freelance Proposal</h3>
+    <p>A proposal that wins is structured around the client's problem — not your credentials. This template guides you through a proven structure: problem framing, your approach, scope definition, three-tier pricing, timeline, and next steps.</p>
+    <div class="includes">
+      <div class="includes-label">What's inside</div>
+      <div class="include-item">Problem/opportunity opener (the section most freelancers skip)</div>
+      <div class="include-item">Approach section with space for project-specific customization</div>
+      <div class="include-item">Scope block with inclusions AND explicit exclusions</div>
+      <div class="include-item">Three-tier pricing table (Essential / Recommended / Premium)</div>
+      <div class="include-item">Timeline with milestone dates</div>
+      <div class="include-item">Single clear next-step CTA</div>
+    </div>
+  </div>
+
+  <h3>The Three-Tier Pricing Method</h3>
+  <p>One of the most impactful changes in this proposal template is the move from a single quote to three tiers. When clients get one price, the decision is "yes or no." When they get three options, the decision is "which one" — and 60–70% pick the middle tier.</p>
+
+  <div class="usage-block">
+    <pre><strong>Essential ($X)</strong>
+Core deliverable with standard timeline. Limited revisions (2 rounds).
+Best for: Budget-conscious clients or smaller initial engagements.
+
+<strong>Recommended ($X × 1.4)</strong>
+Everything in Essential + [key additions: extra revision round, faster timeline,
+one additional asset, extended support period].
+Best for: Most clients. This is the package I'd recommend for your situation.
+
+<strong>Premium ($X × 2)</strong>
+Comprehensive version — [full scope description]. Includes [VIP additions].
+Best for: Clients for whom getting it perfect matters more than budget.</pre>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-label">Pricing tip</div>
+    <p>The Essential tier isn't your throwaway option — it's what makes the Recommended tier feel like the reasonable choice. Price Essential at your actual minimum, Recommended at 1.3–1.5×, and Premium at 1.8–2.2×. Clients will rarely choose Essential or Premium — they're anchors for the middle.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TEMPLATE 2: CONTRACT -->
+  <div class="section-label">Template 02</div>
+  <div class="template-card">
+    <div class="template-num">Template 02 of 04</div>
+    <h3>The Freelance Contract</h3>
+    <p>A contract that protects you without scaring clients. Written in plain English, professional in tone, and specific enough to hold up when it matters. Every clause included has a reason — no legal padding, just the clauses that prevent real problems.</p>
+    <div class="includes">
+      <div class="includes-label">Clauses included</div>
+      <div class="include-item">Scope of work (with explicit exclusions)</div>
+      <div class="include-item">Revision rounds and out-of-scope billing rate</div>
+      <div class="include-item">Payment terms (deposit, balance, late fees)</div>
+      <div class="include-item">Kill fee schedule (for client cancellation)</div>
+      <div class="include-item">Intellectual property transfer (upon final payment)</div>
+      <div class="include-item">Client delay clause (timeline extension trigger)</div>
+      <div class="include-item">Approval and deemed-approval clause</div>
+      <div class="include-item">Limitation of liability</div>
+    </div>
+  </div>
+
+  <h3>The Kill Fee Clause (The Most Valuable Page)</h3>
+  <p>If a client cancels a project you've started, you deserve compensation. Without a kill fee clause, your only protection is the deposit — and if the project was 60% complete, that may not cover your time. The kill fee creates a sliding scale based on project completion.</p>
+
+  <div class="usage-block">
+    <pre><strong>Cancellation and Kill Fee</strong>
+
+If Client cancels the project after signing this agreement:
+
+• Before work begins: Deposit is forfeited. No additional fees.
+• After work begins (up to 50% complete): Client owes the deposit
+  plus 25% of the remaining balance.
+• After 50% completion: Client owes the deposit plus 50% of the
+  remaining balance.
+• After 75% completion: Client owes the deposit plus 75% of the
+  remaining balance.
+
+"Work completion" is measured by [Freelancer]'s professional assessment
+of hours invested relative to total project scope.</pre>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TEMPLATE 3: WELCOME PACKET -->
+  <div class="section-label">Template 03</div>
+  <div class="template-card">
+    <div class="template-num">Template 03 of 04</div>
+    <h3>The Client Welcome Packet</h3>
+    <p>A one-page document sent when the contract is signed and deposit clears. It eliminates the most common early-project confusions: how to communicate, what happens next, what you need from them, and what they can expect. Most clients have never worked with a freelancer who sends one — which is exactly why it creates such a strong impression.</p>
+    <div class="includes">
+      <div class="includes-label">Sections included</div>
+      <div class="include-item">Welcome message (personal, brief)</div>
+      <div class="include-item">Communication guide (channels, response time, best way to reach you)</div>
+      <div class="include-item">Project overview (stage by stage, simple language)</div>
+      <div class="include-item">What I need from you (assets, access, decisions — with deadline)</div>
+      <div class="include-item">What you can expect from me (timeline, check-ins, how I'll deliver)</div>
+      <div class="include-item">How to give great feedback (a brief guide to the kind of input that helps)</div>
+    </div>
+  </div>
+
+  <h3>The Feedback Guide (The Hidden Gem)</h3>
+  <p>Most clients have never been taught how to give useful creative feedback. They say "make it pop" or "I'll know it when I see it." Including a brief section on how to give great feedback doesn't just help you — it signals that you run a rigorous process and take the work seriously.</p>
+
+  <div class="usage-block">
+    <pre><strong>How to Give Feedback That Gets Results</strong>
+
+The most useful feedback tells me:
+→ What's working (what you want to keep)
+→ What's not working (and why — "this doesn't feel right" is less useful
+   than "this doesn't match our brand voice, which is casual and direct")
+→ Specific, not vague ("I'd like the headline to be shorter" vs. "make it
+   better")
+→ One round at a time — please consolidate all feedback before sending
+   so we can address everything together
+
+What to avoid:
+→ Feedback that conflicts with the approved brief
+→ "What would it look like if we tried [completely different direction]?"
+   in round 3 of 3 (that's a scope change and we can discuss it separately)</pre>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TEMPLATE 4: KICKOFF DOC -->
+  <div class="section-label">Template 04</div>
+  <div class="template-card">
+    <div class="template-num">Template 04 of 04</div>
+    <h3>The Kickoff Call Document</h3>
+    <p>A structured intake form and kickoff agenda, combined into one document. Sent before the kickoff call so the client arrives prepared. Used during the call to guide the conversation. Converted into a project brief summary that gets emailed after. This document does the work of three separate things — and takes 20 minutes to complete per client.</p>
+    <div class="includes">
+      <div class="includes-label">Sections included</div>
+      <div class="include-item">Pre-call intake questions (7 questions, covers background, goals, constraints)</div>
+      <div class="include-item">Kickoff call agenda (30 or 60-minute version)</div>
+      <div class="include-item">Decision log (key decisions made during the call)</div>
+      <div class="include-item">Open items tracker (outstanding approvals, assets needed)</div>
+      <div class="include-item">Post-call summary template (email format, sent within 24hrs)</div>
+    </div>
+  </div>
+
+  <h3>Pre-Call Intake Questions</h3>
+  <p>Send these before the kickoff call. The answers become the project brief. They also give you a reference point if the client later asks for something outside the original scope.</p>
+
+  <ol>
+    <li>What does success look like for this project? How will you know it worked?</li>
+    <li>Who else is involved in approvals or decisions on your side?</li>
+    <li>What's the single most important thing to get right? (If you could only achieve one thing, what would it be?)</li>
+    <li>Are there any hard constraints I should know about — timeline, technical requirements, things that must or must not appear?</li>
+    <li>What have you tried before in this area? What worked, what didn't?</li>
+    <li>Are there any competitors or peers whose work in this area you admire? (For reference, not copying.)</li>
+    <li>Is there anything about your business, audience, or situation that I need to understand that isn't obvious from the brief?</li>
+  </ol>
+
+  <div class="divider"></div>
+
+  <!-- WORKFLOW TIMELINE -->
+  <div class="section-label">Complete Workflow</div>
+  <h2>From Prospect to Active Project</h2>
+  <p>Here's how the four templates sequence together in a complete onboarding workflow.</p>
+
+  <ul class="timeline">
+    <li>
+      <div class="timeline-marker">1</div>
+      <div class="timeline-content">
+        <h4>Proposal sent (Template 01)</h4>
+        <p>Client receives the three-tier proposal. Clear scope, clear pricing, one next action. You follow up once at 48 hours if no response.</p>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-marker">2</div>
+      <div class="timeline-content">
+        <h4>Contract signed + deposit invoice sent (Template 02)</h4>
+        <p>Sent the moment the client selects their tier. Use a digital signature tool. Deposit invoice goes with the contract — same email. No work begins until both are complete.</p>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-marker">3</div>
+      <div class="timeline-content">
+        <h4>Welcome Packet sent (Template 03)</h4>
+        <p>Sent when the deposit clears. Usually within 24 hours. Sets up communication norms, answers their most common questions, and requests any assets you need.</p>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-marker">4</div>
+      <div class="timeline-content">
+        <h4>Intake form sent + kickoff call scheduled (Template 04)</h4>
+        <p>Sent with the welcome packet, or the day after. The intake questions are answered before the kickoff call. The call uses the kickoff agenda. A summary goes out within 24 hours.</p>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-marker">5</div>
+      <div class="timeline-content">
+        <h4>Work begins</h4>
+        <p>You have a signed contract, a cleared deposit, an agreed brief, and a shared understanding of the project. The first deliverable can now proceed with real confidence on both sides.</p>
+      </div>
+    </li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <!-- CUSTOMIZATION NOTES -->
+  <div class="section-label">Setup Guide</div>
+  <h2>Customizing for Your Practice</h2>
+
+  <h3>1. Add Your Branding</h3>
+  <p>Replace all instances of [Your Name] and [Your Business] with your actual name. Add your logo to the proposal and welcome packet headers. Update contact information, preferred communication channels, and payment details throughout.</p>
+
+  <h3>2. Adjust Revision Limits</h3>
+  <p>The default templates are set to 2–3 revision rounds. Adjust this based on your service type. Design work typically warrants 2–3. Writing typically warrants 2. Consulting deliverables often 1–2. The key is consistency — whatever you choose, state it clearly in both the proposal and contract.</p>
+
+  <h3>3. Set Your Pricing Tiers</h3>
+  <p>The proposal template has a three-tier pricing table with placeholder values. Fill in your actual rates for the Essential, Recommended, and Premium tiers. A rough starting point: if your standard rate is $X, Essential = $X, Recommended = $X × 1.3–1.5, Premium = $X × 1.8–2.2.</p>
+
+  <h3>4. Adjust the Kill Fee Schedule</h3>
+  <p>The kill fee percentages in the contract are suggestions. Adjust them based on your risk tolerance and typical project structure. Higher-deposit projects can use lower kill fee percentages; lower-deposit projects should use higher ones to compensate.</p>
+
+  <h3>5. Duplicate for Every Client</h3>
+  <p>In Notion, duplicate the template folder for each new client. In Google Docs, make a copy of each document per client. Never edit the master templates — keep them as your starting point.</p>
+
+  <!-- CTA FOOTER -->
+  <div class="cta-footer">
+    <h3>Upgrade to the Complete Bundle</h3>
+    <p>Add the Freelancer OS Notion workspace (CRM, project hub, invoice tracker, client portal) and the AI Prompt Pack (200 prompts for sales, client communication, and deliverables) to the onboarding system you now have.</p>
+    <a href="https://freelancekit.co/shop/complete-bundle">Get the Complete Bundle — $49</a>
+  </div>
+</div>
+
+</body>
+</html>

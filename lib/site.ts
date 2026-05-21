@@ -9,6 +9,7 @@ export const SITE = {
   gumroadProfile: 'https://freelancekit.gumroad.com', // TODO: Replace with your Gumroad profile URL
   nav: [
     { label: 'Shop', href: '/shop' },
+    { label: 'Tools', href: '/tools' },
     { label: 'Blog', href: '/blog' },
     { label: 'About', href: '/about' },
   ],
@@ -20,9 +21,11 @@ export const SITE = {
       { label: 'Complete Bundle', href: '/shop/complete-bundle' },
     ],
     Resources: [
+      { label: 'Free Tools', href: '/tools' },
+      { label: 'Rate Calculator', href: '/tools/rate-calculator' },
+      { label: 'Resources', href: '/resources' },
       { label: 'Blog', href: '/blog' },
       { label: 'About', href: '/about' },
-      { label: 'Affiliate Program', href: '/#affiliate' },
     ],
     Legal: [
       { label: 'Privacy Policy', href: '/privacy' },
