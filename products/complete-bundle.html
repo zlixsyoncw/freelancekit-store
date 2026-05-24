@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreelanceKit — Complete Bundle</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #faf9f7; color: #1a1523; line-height: 1.7; }
+
+    .cover {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 40%, #7c3aed 70%, #8b5cf6 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 60px 40px; position: relative; overflow: hidden;
+    }
+    .cover::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(139,92,246,0.3) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 20%, rgba(196,181,253,0.2) 0%, transparent 60%);
+    }
+    .cover-content { position: relative; z-index: 1; }
+    .cover-badge { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.15em;
+      text-transform: uppercase; color: #fbbf24; border: 1px solid rgba(251,191,36,0.4);
+      padding: 6px 16px; border-radius: 100px; margin-bottom: 32px;
+      background: rgba(251,191,36,0.1); }
+    .cover h1 { font-size: clamp(36px, 6vw, 64px); font-weight: 800; line-height: 1.1;
+      color: white; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .cover h1 span { color: #fbbf24; }
+    .cover-sub { font-size: 20px; color: rgba(255,255,255,0.8); max-width: 560px; margin: 0 auto 48px; }
+    .cover-price { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 32px; }
+    .price-new { font-size: 52px; font-weight: 800; color: #fbbf24; }
+    .price-old { font-size: 22px; text-decoration: line-through; color: rgba(255,255,255,0.5); }
+    .price-save { background: #fbbf24; color: #1a1523; font-size: 12px; font-weight: 800;
+      padding: 4px 10px; border-radius: 100px; text-transform: uppercase; letter-spacing: 0.1em; }
+    .cover-meta { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
+    .cover-meta-item .num { font-size: 28px; font-weight: 800; color: #fbbf24; }
+    .cover-meta-item .label { font-size: 12px; color: rgba(255,255,255,0.6); margin-top: 4px; }
+
+    .page { max-width: 720px; margin: 0 auto; padding: 80px 40px; }
+    .section-label { font-size: 10px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase;
+      color: #7c3aed; margin-bottom: 14px; }
+    h2 { font-size: 30px; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.02em; }
+    h3 { font-size: 19px; font-weight: 700; margin-bottom: 8px; margin-top: 36px; }
+    p { color: #4a3f5c; margin-bottom: 16px; font-size: 16px; }
+    ul, ol { color: #4a3f5c; padding-left: 24px; margin-bottom: 20px; }
+    li { margin-bottom: 8px; font-size: 15px; }
+    strong { color: #1a1523; }
+    .divider { height: 1px; background: #e8e3f0; margin: 56px 0; }
+
+    .product-card {
+      background: white; border: 1px solid #ede9fe; border-radius: 16px;
+      padding: 32px; margin-bottom: 24px; border-left: 4px solid #7c3aed;
+      box-shadow: 0 2px 12px rgba(124,58,237,0.08);
+    }
+    .product-card .product-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+    .product-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center;
+      justify-content: center; font-size: 22px; flex-shrink: 0; }
+    .product-icon.purple { background: #ede9fe; }
+    .product-icon.blue { background: #dbeafe; }
+    .product-icon.amber { background: #fef3c7; }
+    .product-card h4 { font-size: 20px; font-weight: 700; color: #1a1523; margin-bottom: 4px; }
+    .product-card .product-price { font-size: 14px; color: #7c3aed; font-weight: 700; }
+    .product-card p { font-size: 15px; color: #4a3f5c; margin-bottom: 12px; }
+    .feature-list { list-style: none; padding: 0; margin: 0; }
+    .feature-list li { display: flex; align-items: flex-start; gap: 10px; padding: 6px 0;
+      font-size: 14px; color: #4a3f5c; border-bottom: 1px solid #f3f4f6; }
+    .feature-list li:last-child { border-bottom: none; }
+    .check { color: #7c3aed; font-weight: 800; flex-shrink: 0; margin-top: 1px; }
+
+    .value-table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+    .value-table th { text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em; color: #7c3aed; background: #faf5ff;
+      border-bottom: 2px solid #ede9fe; }
+    .value-table td { padding: 14px 16px; font-size: 14px; color: #4a3f5c; border-bottom: 1px solid #f3f4f6; }
+    .value-table tr:last-child td { border-bottom: none; }
+    .value-table .total-row td { font-weight: 800; color: #1a1523; background: #faf5ff; }
+    .value-table .bundle-row td { font-weight: 800; color: #7c3aed; font-size: 16px; }
+    .value-table .strike { text-decoration: line-through; color: #9ca3af; }
+
+    .setup-step { display: flex; gap: 20px; margin-bottom: 32px; }
+    .step-num { flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+      background: #7c3aed; color: white; display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 15px; margin-top: 3px; }
+    .step-content h4 { font-size: 17px; font-weight: 700; color: #1a1523; margin-bottom: 6px; }
+    .step-content p { font-size: 14px; margin-bottom: 0; }
+
+    .tip-box { background: #faf5ff; border: 1px solid #ddd6fe; border-radius: 12px;
+      padding: 20px 24px; margin: 24px 0; }
+    .tip-box .tip-label { font-size: 11px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.15em; color: #7c3aed; margin-bottom: 8px; }
+    .tip-box p { font-size: 14px; color: #5b21b6; margin-bottom: 0; }
+
+    .timeline { border-left: 3px solid #7c3aed; padding-left: 28px; margin: 24px 0; }
+    .timeline-item { position: relative; margin-bottom: 28px; }
+    .timeline-item::before { content: ''; position: absolute; left: -37px; top: 6px;
+      width: 12px; height: 12px; border-radius: 50%; background: #7c3aed; }
+    .timeline-item h4 { font-size: 16px; font-weight: 700; color: #1a1523; margin-bottom: 4px; }
+    .timeline-item p { font-size: 14px; color: #4a3f5c; margin-bottom: 0; }
+    .timeline-item .week-label { font-size: 11px; font-weight: 800; color: #7c3aed;
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
+
+    .outcome-box { background: #1a1523; border-radius: 16px; padding: 32px; margin: 32px 0; }
+    .outcome-box h4 { font-size: 20px; font-weight: 700; color: white; margin-bottom: 16px; }
+    .outcome-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .outcome-stat .stat-num { font-size: 32px; font-weight: 800; color: #a78bfa; }
+    .outcome-stat .stat-label { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 4px; }
+
+    .cta-footer { background: linear-gradient(135deg, #4c1d95, #6d28d9); border-radius: 20px;
+      padding: 48px 40px; text-align: center; color: white; margin-top: 60px; }
+    .cta-footer h3 { font-size: 26px; font-weight: 800; margin-bottom: 12px; }
+    .cta-footer p { color: rgba(255,255,255,0.75); font-size: 16px; margin-bottom: 24px; }
+    .cta-footer a { display: inline-block; background: #fbbf24; color: #1a1523;
+      padding: 16px 36px; border-radius: 12px; font-weight: 800; font-size: 15px; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .page { padding: 48px 20px; }
+      .cover { padding: 48px 20px; }
+      .outcome-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-content">
+    <div class="cover-badge">FreelanceKit — Complete Bundle</div>
+    <h1>Everything You Need<br/>to Run a <span>Profitable</span><br/>Freelance Business</h1>
+    <p class="cover-sub">All three FreelanceKit products in one bundle. One purchase, lifetime access, immediate download.</p>
+    <div class="cover-price">
+      <div class="price-new">$49</div>
+      <div>
+        <div class="price-old">$65 separately</div>
+        <div class="price-save">Save $16</div>
+      </div>
+    </div>
+    <div class="cover-meta">
+      <div class="cover-meta-item">
+        <div class="num">3</div>
+        <div class="label">Products included</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="num">200+</div>
+        <div class="label">Assets &amp; resources</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="num">$49</div>
+        <div class="label">One-time (no subscription)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VALUE BREAKDOWN -->
+<div class="page">
+  <div class="section-label">What's Included</div>
+  <h2>Three products that work together as a system</h2>
+  <p>Each product in the bundle solves a different problem. Together they cover the full business lifecycle: run your operations (Freelancer OS), win clients professionally (Client Onboarding Bundle), and work smarter with AI (AI Prompt Pack).</p>
+
+  <table class="value-table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Individual Price</th>
+        <th>Included</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Freelancer OS</strong> — Notion business workspace</td>
+        <td>$29</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td><strong>Client Onboarding Bundle</strong> — Proposal, contract, welcome packet</td>
+        <td>$19</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td><strong>AI Prompt Pack</strong> — 200 tested prompts for freelancers</td>
+        <td>$17</td>
+        <td>✓</td>
+      </tr>
+      <tr class="total-row">
+        <td>Total value if purchased separately</td>
+        <td class="strike">$65</td>
+        <td></td>
+      </tr>
+      <tr class="bundle-row">
+        <td>Complete Bundle price</td>
+        <td>$49</td>
+        <td>You save $16</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <!-- PRODUCT 1 -->
+  <div class="section-label">Product 1 of 3</div>
+  <div class="product-card">
+    <div class="product-header">
+      <div class="product-icon purple">🗂</div>
+      <div>
+        <h4>Freelancer OS</h4>
+        <div class="product-price">Normally $29 — included in your bundle</div>
+      </div>
+    </div>
+    <p>A complete Notion workspace that replaces the 5–7 separate apps most freelancers cobble together. Your client pipeline, project tracker, invoice system, and weekly dashboard — all connected, all in one place.</p>
+    <ul class="feature-list">
+      <li><span class="check">✓</span> <span>Full CRM with pipeline stages, follow-up dates, and source tracking</span></li>
+      <li><span class="check">✓</span> <span>Project hub with profitability calculator (see your true hourly rate on every project)</span></li>
+      <li><span class="check">✓</span> <span>Invoice tracker with Revenue This Month formula and outstanding amounts</span></li>
+      <li><span class="check">✓</span> <span>Shareable client portal — a Notion page per client showing project status and tasks</span></li>
+      <li><span class="check">✓</span> <span>Revenue dashboard with monthly totals, YTD, and payment tracking</span></li>
+      <li><span class="check">✓</span> <span>Weekly review template built in — 15 minutes every Friday keeps everything on track</span></li>
+      <li><span class="check">✓</span> <span>Linked databases — invoice totals roll up to client records automatically</span></li>
+      <li><span class="check">✓</span> <span>Works on Notion free plan — no paid subscription required</span></li>
+    </ul>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="section-label">Product 2 of 3</div>
+  <div class="product-card">
+    <div class="product-header">
+      <div class="product-icon blue">📋</div>
+      <div>
+        <h4>Client Onboarding Bundle</h4>
+        <div class="product-price">Normally $19 — included in your bundle</div>
+      </div>
+    </div>
+    <p>Every document you need to win and onboard a client professionally. Stop writing proposals from scratch, stop panicking when a client asks for a contract, and stop losing deals because your process looked amateur.</p>
+    <ul class="feature-list">
+      <li><span class="check">✓</span> <span>Proposal template with 3-tier pricing presentation (anchors clients to your middle tier)</span></li>
+      <li><span class="check">✓</span> <span>Freelance contract with 8 essential clauses — scope, payment, IP ownership, kill fee</span></li>
+      <li><span class="check">✓</span> <span>Client welcome packet — what to expect, how you work, communication standards</span></li>
+      <li><span class="check">✓</span> <span>Project kickoff document — the questions that eliminate misunderstandings before they happen</span></li>
+      <li><span class="check">✓</span> <span>Complete onboarding workflow timeline with exactly what to send and when</span></li>
+      <li><span class="check">✓</span> <span>Discovery call framework — how to run a call that converts</span></li>
+      <li><span class="check">✓</span> <span>Editable in Google Docs, Word, or Notion — no special software needed</span></li>
+    </ul>
+  </div>
+
+  <!-- PRODUCT 3 -->
+  <div class="section-label">Product 3 of 3</div>
+  <div class="product-card">
+    <div class="product-header">
+      <div class="product-icon amber">🤖</div>
+      <div>
+        <h4>AI Prompt Pack</h4>
+        <div class="product-price">Normally $17 — included in your bundle</div>
+      </div>
+    </div>
+    <p>200 tested, copy-paste prompts covering every part of your freelance business — from writing proposals to handling difficult clients to producing deliverables faster. These are real prompts built for real freelance situations.</p>
+    <ul class="feature-list">
+      <li><span class="check">✓</span> <span>45 proposal and pitch prompts — write winning proposals in under 30 minutes</span></li>
+      <li><span class="check">✓</span> <span>38 client communication prompts — professional responses for any situation</span></li>
+      <li><span class="check">✓</span> <span>35 content and deliverable prompts — first drafts that are 80% done</span></li>
+      <li><span class="check">✓</span> <span>28 business and pricing prompts — negotiate, raise rates, handle scope creep</span></li>
+      <li><span class="check">✓</span> <span>32 marketing and growth prompts — build your presence, attract better clients</span></li>
+      <li><span class="check">✓</span> <span>22 admin and operations prompts — contracts, invoices, difficult conversations</span></li>
+      <li><span class="check">✓</span> <span>Works with ChatGPT, Claude, and Gemini — no lock-in to one AI tool</span></li>
+      <li><span class="check">✓</span> <span>Customization guide — how to adapt each prompt to your specific niche</span></li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- HOW THEY WORK TOGETHER -->
+  <div class="section-label">The System</div>
+  <h2>How the three products work as one system</h2>
+  <p>Most freelancers buy tools that don't talk to each other. This bundle is designed to be a connected workflow — from first client contact to final payment.</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="week-label">Lead comes in</div>
+      <h4>Log them in Freelancer OS CRM</h4>
+      <p>Add the prospect to your pipeline in Freelancer OS. Set a follow-up date. Track their source. You'll never lose a lead again because it wasn't in writing.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="week-label">Discovery call</div>
+      <h4>Run the call with the AI Prompt Pack</h4>
+      <p>Use the discovery call framework prompts to prepare the right questions. Run a call that reveals the real budget, timeline, and decision-maker — before you spend hours on a proposal.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="week-label">Send proposal</div>
+      <h4>Write it fast with the AI Prompt Pack + Client Onboarding Bundle template</h4>
+      <p>Use the AI proposal prompts to draft the content. Drop it into the Onboarding Bundle proposal template with 3-tier pricing. Send a polished, structured proposal in under an hour.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="week-label">Client says yes</div>
+      <h4>Send the contract from the Client Onboarding Bundle</h4>
+      <p>Pull out the pre-written contract. Fill in the specifics. Send it. Get it signed. Move on with the confidence that scope creep and late payments have legal language behind them.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="week-label">Project kicks off</div>
+      <h4>Create their client portal in Freelancer OS</h4>
+      <p>Duplicate the client portal template. Share it with your new client. They can see project status, current tasks, and recent completions at any time — without emailing you.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="week-label">During the project</div>
+      <h4>Use AI Prompt Pack for every deliverable</h4>
+      <p>First draft of any document, email, or piece of content — use the prompt pack. Then edit it into something that sounds like you. Cut production time by 40–60%.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="week-label">Invoice sent</div>
+      <h4>Log it in Freelancer OS</h4>
+      <p>Add the invoice to your tracker. Update the client's total billed in the CRM. Watch the Revenue This Month formula update. Know exactly where you stand financially at all times.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- EXPECTED OUTCOMES -->
+  <div class="section-label">Expected Results</div>
+  <h2>What using this system consistently produces</h2>
+
+  <div class="outcome-box">
+    <h4>After 90 days of using the complete system</h4>
+    <div class="outcome-grid">
+      <div class="outcome-stat">
+        <div class="stat-num">40%</div>
+        <div class="stat-label">Less time on admin and client management</div>
+      </div>
+      <div class="outcome-stat">
+        <div class="stat-num">2x</div>
+        <div class="stat-label">Faster proposal writing with AI prompts</div>
+      </div>
+      <div class="outcome-stat">
+        <div class="stat-num">$0</div>
+        <div class="stat-label">Scope creep losses when contract is signed</div>
+      </div>
+      <div class="outcome-stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Visibility into pipeline, projects, and revenue</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SETUP GUIDE -->
+  <div class="section-label">Getting Started</div>
+  <h2>How to set everything up in one afternoon</h2>
+
+  <div class="setup-step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h4>Set up Freelancer OS first (30–45 min)</h4>
+      <p>Open the Freelancer OS file. Click "Duplicate" in Notion's top right. Select your workspace. Delete the example data and add your 3–5 current clients and any active projects. This becomes your daily hub.</p>
+    </div>
+  </div>
+
+  <div class="setup-step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h4>Save the Client Onboarding documents to Google Drive (10 min)</h4>
+      <p>Open the Client Onboarding Bundle file. Download the proposal and contract templates. Make a copy in Google Drive ("FreelanceKit/Templates"). You'll duplicate these for each new client — never start from scratch again.</p>
+    </div>
+  </div>
+
+  <div class="setup-step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h4>Bookmark the AI Prompt Pack (5 min)</h4>
+      <p>Open the AI Prompt Pack in your browser. Bookmark it. Keep it in your bookmarks bar next to your other daily tools. Before you write any client email or document, check here first.</p>
+    </div>
+  </div>
+
+  <div class="setup-step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h4>Run your first weekly review (15 min)</h4>
+      <p>This Friday, open Freelancer OS and go through the weekly review questions. Answer them honestly. Do this every Friday for 8 weeks. Your freelance practice will look completely different by then — not because anything is magic, but because clarity and consistency compound.</p>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-label">Important</div>
+    <p>These tools only work if you actually use them. The biggest predictor of success isn't which tools you have — it's whether you open them consistently. Put Freelancer OS in your browser's bookmarks bar. Add a Friday calendar event for the weekly review. Use the AI prompts before you write anything substantial. Make it automatic, not aspirational.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- BONUS CONTENT -->
+  <div class="section-label">Bonus Material</div>
+  <h2>Additional resources included with your bundle</h2>
+
+  <h3>Rate Increase Script</h3>
+  <p>The exact email to send when you raise your rates on an existing client. Tested language that frames the increase as a service improvement, not a hardship. Most clients say yes when this script is used correctly.</p>
+
+  <h3>Late Payment Follow-Up Sequence</h3>
+  <p>Three email templates for chasing overdue invoices — progressively firmer in tone, professionally written, and proven to get responses. Includes the final "notice before action" template that almost always results in payment.</p>
+
+  <h3>90-Day Business Audit Checklist</h3>
+  <p>Every 90 days, run through this checklist to review: your effective hourly rate across all clients, which clients are most and least profitable, where your time is actually going, and what to change in the next quarter.</p>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <div class="section-label">Questions</div>
+  <h2>Common questions</h2>
+
+  <h3>Do I need a paid Notion account?</h3>
+  <p>No. Freelancer OS is designed to work on Notion's free plan. You don't need Notion Plus, Teams, or any paid tier.</p>
+
+  <h3>What format are the documents in?</h3>
+  <p>The proposal, contract, and welcome packet are delivered as formatted HTML files you can open in any browser, copy into Google Docs, or paste into Word. The Notion template is duplicated directly in Notion. The AI prompts are in a clean HTML file you can reference anytime.</p>
+
+  <h3>Can I customize these for my niche?</h3>
+  <p>Yes. Every template and prompt is editable. The AI prompts include customization guidance — how to adapt each prompt to your specific niche, tone, and client type. The contract and proposal templates have clearly marked fields for your details.</p>
+
+  <h3>What if I already have some of these individually?</h3>
+  <p>If you purchased a product individually in the last 30 days, email hello@freelancekit.co with your receipt and we'll refund the difference. If it's been longer, the bundle pricing is final.</p>
+
+  <h3>Is there a refund policy?</h3>
+  <p>Yes. 14-day money-back guarantee, no questions asked. Email hello@freelancekit.co with your order number if you're not satisfied.</p>
+
+  <div class="cta-footer">
+    <h3>You Already Have Everything You Need</h3>
+    <p>The tools, the templates, the prompts. Now it's about opening them daily and letting consistency do what it does. Start with the weekly review this Friday.</p>
+    <a href="https://freelancekit.co/shop">Back to Shop</a>
+  </div>
+</div>
+
+</body>
+</html>

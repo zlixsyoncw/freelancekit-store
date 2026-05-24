@@ -5,10 +5,16 @@ import { POSTS, formatDate } from '@/lib/blog'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Blog — Freelance Business Advice & Guides',
+  title: 'Blog — Freelance Business Advice & Guides | FreelanceKit',
   description:
-    'Practical guides on pricing, clients, systems, and growing a profitable freelance practice. No fluff, just what works.',
+    'Practical guides on pricing, clients, contracts, and systems for freelancers. No fluff — just what actually works for independent contractors.',
   alternates: { canonical: `${SITE.url}/blog` },
+  openGraph: {
+    type: 'website',
+    title: 'Freelance Business Blog — FreelanceKit',
+    description: 'Practical guides on pricing, clients, contracts, and systems for freelancers.',
+    url: `${SITE.url}/blog`,
+  },
 }
 
 export default function BlogPage() {
@@ -16,7 +22,29 @@ export default function BlogPage() {
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   )
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'FreelanceKit Blog',
+    description: 'Practical freelance business guides on pricing, clients, contracts, and systems.',
+    url: `${SITE.url}/blog`,
+    publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+    blogPost: sorted.slice(0, 10).map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.excerpt,
+      datePublished: post.publishedAt,
+      url: `${SITE.url}/blog/${post.slug}`,
+      author: { '@type': 'Organization', name: SITE.name },
+    })),
+  }
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-12">
         <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-ink mb-3">
@@ -57,5 +85,6 @@ export default function BlogPage() {
         ))}
       </div>
     </div>
+    </>
   )
 }

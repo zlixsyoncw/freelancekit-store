@@ -841,7 +841,425 @@ export const POSTS: BlogPost[] = [
       <p>Clients who respond well to this are clients worth keeping. Clients who react defensively or go silent were telling you something important about how the relationship was always going to end.</p>
     `,
   },
+  {
+    slug: 'freelance-scope-creep',
+    title: 'How to Stop Scope Creep From Killing Your Freelance Projects',
+    excerpt:
+      'Scope creep is the #1 reason freelancers end up working for free. Here\'s how to define, protect, and charge for project scope without damaging client relationships.',
+    publishedAt: '2026-05-01',
+    readingMinutes: 7,
+    category: 'Legal & Contracts',
+    tags: ['scope creep', 'contracts', 'client management', 'freelancing'],
+    metaTitle: 'How to Stop Scope Creep: A Freelancer\'s Complete Guide',
+    metaDescription:
+      'Scope creep silently eats your profits. Learn how to define project scope in your contract, recognize scope creep early, and charge for extra work without losing clients.',
+    content: `
+      <p>You quoted 10 hours. It's been 22. The client keeps adding "just one more thing." You're exhausted, underpaid, and afraid to say no because you need the referral.</p>
+
+      <p>This is scope creep. It doesn't happen because clients are malicious — it happens because the scope wasn't defined clearly enough in the first place. Here's how to fix it at every stage of a project.</p>
+
+      <h2>Why Scope Creep Happens</h2>
+
+      <p>Scope creep has three root causes:</p>
+
+      <ol>
+        <li><strong>The contract described deliverables, not requirements.</strong> "A fully designed website" means something different to you and to every client you'll ever work with. Specificity is protection.</li>
+        <li><strong>There was no defined revision process.</strong> Unlimited revisions are unlimited unpaid work. Every professional service has revision limits — your freelance work should too.</li>
+        <li><strong>You never said the magic phrase.</strong> "That's outside our current scope — happy to quote that as an add-on." Most freelancers never say this. They just do the work and resent it.</li>
+      </ol>
+
+      <h2>Define Scope Before You Sign Anything</h2>
+
+      <p>Your contract should specify deliverables in terms of:</p>
+
+      <ul>
+        <li><strong>Output</strong>: What exactly are you producing? (3 blog posts, 1 homepage design, 5 product descriptions)</li>
+        <li><strong>Format</strong>: What format will you deliver it in? (Google Doc, Figma file, PDF)</li>
+        <li><strong>Rounds of revision</strong>: How many revision rounds are included? (Standard: 2 rounds of minor revisions)</li>
+        <li><strong>What's explicitly excluded</strong>: Write down what you're NOT doing. "Copywriting not included." "Mobile development not included." "Stock photo licensing not included."</li>
+      </ul>
+
+      <p>The more specific you are upfront, the easier every future conversation is. Vague scope = vague boundaries = unpaid work.</p>
+
+      <h2>Recognize Scope Creep Early</h2>
+
+      <p>Scope creep usually sounds like:</p>
+
+      <ul>
+        <li>"While you're at it, could you also..."</li>
+        <li>"Actually, we were thinking it might be better if..."</li>
+        <li>"One more small thing before we finalize..."</li>
+        <li>"Can we add a section for..."</li>
+      </ul>
+
+      <p>None of these requests are inherently unreasonable. The problem is when they're treated as free additions rather than paid work.</p>
+
+      <h2>The Script That Handles It Without Awkwardness</h2>
+
+      <p>When a client asks for something outside scope, say this:</p>
+
+      <blockquote>
+        <p>"That's a great idea — it's outside what we scoped for this project, but I'd love to include it. I can put together a quick quote for adding that on. Would that work?"</p>
+      </blockquote>
+
+      <p>Notice what this does: it validates the request, explains the situation without blame, and offers a clear path forward. It doesn't apologize for charging appropriately.</p>
+
+      <p>Most clients will either agree to the add-on, drop the request (it wasn't that important), or negotiate. All three outcomes are better than silently doing the work for free.</p>
+
+      <h2>When a Client Pushes Back on Your Scope Limits</h2>
+
+      <p>Sometimes clients push back. They'll say "I thought this was included" or "this should have been in the original scope." How you handle this determines whether the project recovers or becomes a nightmare.</p>
+
+      <p>First, check yourself: were they right? Is this genuinely ambiguous? If so, absorb this one with grace, and tighten the scope language in future contracts. Don't fight a battle you can't cleanly win.</p>
+
+      <p>If the scope was clear and they're wrong: stick to it. Pull out the signed contract. Point to the language. Be matter-of-fact, not defensive. "Here's what we agreed on — let me know if you'd like to add this and I'll put together a quote."</p>
+
+      <h2>Bill for Scope Creep That Already Happened</h2>
+
+      <p>If you've already done out-of-scope work, you have two options:</p>
+
+      <ol>
+        <li><strong>Invoice for it</strong>: "I went ahead and completed [X] as requested — I've added [Y] hours at my standard rate to this invoice. Let me know if you have questions."</li>
+        <li><strong>Use it as goodwill</strong>: "I included [X] as a courtesy — in the future, additional work like this would be billed separately." Then hold that line.</li>
+      </ol>
+
+      <p>Don't silently absorb it and say nothing. That trains the client to keep asking.</p>
+
+      <h2>The Real Fix: Better Contracts</h2>
+
+      <p>Scope creep is a symptom of unclear agreements. The best time to fix it is before the project starts. A proper freelance contract — not a one-paragraph email, but a real document with scope, revision limits, payment terms, and change order process — is the single most effective tool for protecting your time.</p>
+
+      <p>It also signals professionalism. Clients who work with lawyers, agencies, and experienced consultants expect contracts. Showing up without one makes you look like a beginner, not a generous one.</p>
+    `,
+  },
+  {
+    slug: 'freelance-tax-basics',
+    title: 'Freelance Taxes: What Every Independent Contractor Needs to Know',
+    excerpt:
+      'Taxes are the thing that blindsides most new freelancers. Here\'s what you owe, when you owe it, what you can deduct, and how to not get hit with a surprise bill in April.',
+    publishedAt: '2026-05-08',
+    readingMinutes: 8,
+    category: 'Finance & Invoicing',
+    tags: ['taxes', 'freelance finance', 'self-employment', 'deductions'],
+    metaTitle: 'Freelance Taxes Explained: Self-Employment Tax, Deductions & Quarterly Payments',
+    metaDescription:
+      'Everything freelancers need to know about taxes: self-employment tax rates, quarterly estimated payments, deductible expenses, and how to avoid a surprise tax bill.',
+    content: `
+      <p>The average employee pays income tax and their employer covers the other half of payroll taxes. As a freelancer, you pay both halves — and no one withholds anything from your paychecks. If you don't plan for this, April is a very bad month.</p>
+
+      <p>This guide covers the basics: what you owe, when to pay it, and how to keep as much as legally possible.</p>
+
+      <h2>The Self-Employment Tax</h2>
+
+      <p>In the US, employees pay 7.65% in FICA taxes (Social Security + Medicare). Their employer pays another 7.65%. As a self-employed freelancer, you pay both sides: 15.3% on top of your regular income tax rate.</p>
+
+      <p>On $50,000 of freelance income, that's $7,650 in self-employment tax alone — before income tax. This surprises almost every new freelancer the first year.</p>
+
+      <p>The good news: you can deduct half of self-employment tax from your income when calculating income tax. It softens the blow, but doesn't eliminate it.</p>
+
+      <h2>Quarterly Estimated Tax Payments</h2>
+
+      <p>The IRS expects you to pay taxes as you earn, not just once a year. If you expect to owe more than $1,000 in taxes for the year, you're required to make quarterly estimated payments.</p>
+
+      <p>Due dates:</p>
+      <ul>
+        <li>Q1 (Jan–Mar): Due April 15</li>
+        <li>Q2 (Apr–Jun): Due June 15</li>
+        <li>Q3 (Jul–Sep): Due September 15</li>
+        <li>Q4 (Oct–Dec): Due January 15 (following year)</li>
+      </ul>
+
+      <p>Miss these and you'll owe a penalty, even if you pay everything at tax time. Set a calendar reminder for each date.</p>
+
+      <p>A simple calculation: set aside 25–30% of every payment you receive into a separate savings account. Pay from that account quarterly. What's left at the end of Q4 is your bonus.</p>
+
+      <h2>What You Can Deduct</h2>
+
+      <p>The tax code treats business expenses as pre-tax deductions — you only pay income tax on net profit, not gross revenue. Common deductible expenses for freelancers:</p>
+
+      <ul>
+        <li><strong>Home office</strong>: If you use part of your home exclusively for work, you can deduct a proportional share of rent/mortgage and utilities. Track the square footage.</li>
+        <li><strong>Software and subscriptions</strong>: Notion, Adobe, Slack, project management tools, design software — all deductible if used for work.</li>
+        <li><strong>Equipment</strong>: Computer, monitor, microphone, camera, desk, chair. Business use percentage matters for items used personally too.</li>
+        <li><strong>Professional development</strong>: Online courses, books, conference tickets, coaching.</li>
+        <li><strong>Health insurance</strong>: Self-employed individuals can deduct 100% of health, dental, and vision premiums.</li>
+        <li><strong>Business meals</strong>: 50% deductible when with a client or business prospect. Keep receipts and note who you met with.</li>
+        <li><strong>Travel</strong>: Flights, hotels, and 50% of meals for business travel. Keep documentation.</li>
+        <li><strong>Marketing and advertising</strong>: Website hosting, domain names, ads, professional photography.</li>
+        <li><strong>Accounting and legal</strong>: Bookkeeping, tax preparation, contract review fees.</li>
+        <li><strong>Bank and payment fees</strong>: Stripe, PayPal, or wire transfer fees from clients paying you.</li>
+      </ul>
+
+      <h2>How to Track It All</h2>
+
+      <p>Open a separate business checking account. Run all business income and expenses through it. At tax time, you have a clean record — no sorting through personal transactions trying to remember what was work-related.</p>
+
+      <p>Use a simple spreadsheet or accounting tool (Wave is free) to categorize expenses monthly. Don't let it pile up — 20 minutes a month is much easier than 20 hours in March.</p>
+
+      <h2>The S-Corp Question</h2>
+
+      <p>Once you're earning $60,000+ consistently, talk to an accountant about forming an S-Corp. The self-employment tax structure changes significantly, and many freelancers save $5,000–$15,000 per year with the right entity structure. The setup and ongoing costs (bookkeeping, payroll) eat into the savings, so it only makes sense above a certain income threshold — your accountant can run the numbers.</p>
+
+      <h2>The One Rule That Covers Most of This</h2>
+
+      <p>Set aside 30% of every invoice payment the day it hits your account. Put it in a separate savings account labeled "Tax Reserve." Pay your quarterly estimates from it. If you've over-saved, that money becomes a bonus. If you've under-saved, you're covered. This single habit prevents the April surprise that hits most freelancers in year one.</p>
+    `,
+  },
+  {
+    slug: 'how-to-find-high-paying-freelance-clients',
+    title: 'How to Find High-Paying Freelance Clients (Not Just Any Clients)',
+    excerpt:
+      'Low-paying clients are not a stepping stone to high-paying ones — they\'re a trap. Here\'s how to target, attract, and convert clients who pay professional rates from the start.',
+    publishedAt: '2026-05-15',
+    readingMinutes: 8,
+    category: 'Getting Started',
+    tags: ['clients', 'sales', 'freelance business', 'marketing'],
+    metaTitle: 'How to Find High-Paying Freelance Clients: Strategies That Work',
+    metaDescription:
+      'Stop chasing low-budget clients. Learn how to identify, attract, and convert high-paying freelance clients using positioning, targeting, and proven outreach strategies.',
+    content: `
+      <p>The freelancers who charge $50/hour and the freelancers who charge $200/hour are often doing identical work. The difference isn't skill — it's who they're selling to and how they're positioning themselves.</p>
+
+      <p>High-paying clients aren't harder to find. They're just in different places, respond to different signals, and make decisions differently. Here's how to get in front of them.</p>
+
+      <h2>First: Define What "High-Paying" Means for Your Service</h2>
+
+      <p>High-paying is relative to what you're selling. A $5,000 logo design is high-paying for a freelance designer. A $5,000 website might be low-paying for a developer. Before you go looking for better clients, make sure you know what better actually looks like in your market.</p>
+
+      <p>Research what experienced professionals in your niche charge. Freelancer forums, X/Twitter, community surveys (Millo, Designer News, etc.) give you real market data. If you don't know what the ceiling is, you can't aim for it.</p>
+
+      <h2>The Positioning Shift That Changes Everything</h2>
+
+      <p>Low-paying clients find freelancers on Fiverr and Upwork searching for the cheapest option. High-paying clients find specialists through referrals, LinkedIn, and industry-specific channels — and they're specifically trying to avoid the cheapest option because they've been burned by it.</p>
+
+      <p>To attract them, you need to look like what they're looking for: a specialist, not a generalist. Your website, your LinkedIn, your pitch — all of it should communicate that you solve a specific problem for a specific type of client.</p>
+
+      <p>"Freelance copywriter" competes on price. "Email copywriter for SaaS companies with $1M+ ARR" competes on fit.</p>
+
+      <h2>Where High-Paying Clients Actually Are</h2>
+
+      <h3>1. Referrals from existing clients</h3>
+      <p>The fastest path to a high-paying client is through a client who already trusts you. If you've done good work, ask. "Do you know anyone else who might benefit from what I did for you?" People like referring — they just need to be asked.</p>
+
+      <h3>2. Industry-specific Slack communities and forums</h3>
+      <p>Every vertical has communities where buyers and sellers interact. Design communities (Designer Hangout, Dribbble forums), marketing communities (Demand Curve, SaaS Growth Hacking), startup communities (YC's Work at a Startup, Product Hunt). Be genuinely helpful. Answer questions. Build a presence. The work follows.</p>
+
+      <h3>3. LinkedIn, done correctly</h3>
+      <p>LinkedIn works when you're creating content, not just sending connection requests. Post about your expertise — not "I'm available for projects" but "here's what I learned from solving [specific problem] for [type of client]." Buyers search for people with demonstrated expertise, not people who've announced their availability.</p>
+
+      <h3>4. Agency overflow</h3>
+      <p>Agencies constantly overflow on capacity. They need trusted freelancers they can refer to or subcontract with. One good agency relationship can provide more high-quality work than months of self-promotion. Reach out to agencies in your niche. Build relationships without immediately asking for work.</p>
+
+      <h3>5. Strategic cold outreach</h3>
+      <p>Cold outreach works when it's hyper-targeted. Pick 20 companies that are exactly your ideal client — specific industry, specific size, specific problem you solve. Research them individually. Send a short, specific email about something you noticed that you could help with. Volume cold outreach fails. Precision outreach converts.</p>
+
+      <h2>Signals That Attract High-Paying Clients</h2>
+
+      <p>High-paying clients are often making $10,000+ decisions. They do due diligence. They look for social proof. The following signals significantly increase conversion:</p>
+
+      <ul>
+        <li><strong>Named client work</strong>: "I helped [Company people have heard of]" opens doors. Do one pro-bono or deeply discounted project for a recognizable brand and put it in your portfolio.</li>
+        <li><strong>Case studies with results</strong>: Not "I designed their website" but "I redesigned their checkout flow and they saw a 23% increase in conversion." Results, not deliverables.</li>
+        <li><strong>Published thought leadership</strong>: A guest post in an industry publication signals expertise. Find the publications your ideal clients read and pitch them.</li>
+        <li><strong>Professional process</strong>: A proper contract, a discovery call framework, a structured onboarding process. These signal experience to anyone who's worked with disorganized freelancers before.</li>
+      </ul>
+
+      <h2>The Pricing Trap</h2>
+
+      <p>Low rates attract price-sensitive clients who will nickel-and-dime every invoice, question every deliverable, and disappear the moment they find someone cheaper. High rates attract clients who understand value, respect expertise, and want long-term relationships.</p>
+
+      <p>Raising your rates filters out the wrong clients automatically. The first time you quote $200/hour and someone says yes, you'll understand why you've been undercharging. Start there and work backward to who you need to talk to to get that yes.</p>
+    `,
+  },
 ]
+
+  {
+    slug: 'how-to-build-a-freelance-portfolio',
+    title: 'How to Build a Freelance Portfolio (Even If You Have No Clients Yet)',
+    excerpt:
+      "A portfolio with zero client work isn't the dead end most new freelancers think it is. Here's the framework for building one that actually converts — before you have a single testimonial.",
+    publishedAt: '2026-05-19',
+    readingMinutes: 9,
+    category: 'Getting Started',
+    tags: ['portfolio', 'getting started', 'clients', 'personal brand'],
+    metaTitle: 'How to Build a Freelance Portfolio With No Experience (2026)',
+    metaDescription:
+      'Build a freelance portfolio that converts — even without client work. Spec projects, case studies, and positioning strategies that get you hired.',
+    content: `
+      <p>Every new freelancer eventually searches "how to build a portfolio with no clients" and finds the same circular advice: get clients, build a portfolio. Get a portfolio, find clients.</p>
+
+      <p>The truth is that the portfolio problem is mostly a positioning problem. Here's how to actually solve it.</p>
+
+      <h2>What a Portfolio Is Actually For</h2>
+
+      <p>Before building anything, understand what a client is looking at when they review your portfolio. They're not evaluating the quality of your previous clients — they're trying to answer one question: <em>Can this person solve my specific problem?</em></p>
+
+      <p>That question can be answered with client work, spec work, or case studies — as long as the work is credible, specific, and clearly demonstrates the outcome. Real client logos are social proof, but they're not the only evidence that works.</p>
+
+      <h2>The Three Portfolio Options (Ranked by Difficulty)</h2>
+
+      <h3>Option 1: Spec Work (Do This First)</h3>
+
+      <p>Spec work is real work done on real briefs — for real companies or scenarios — that no one hired you to do. It's not fake. It's unsolicited design, copy, strategy, or code.</p>
+
+      <p>Pick three to five companies that are your ideal clients. Review their current work critically. Identify a specific, addressable problem — a landing page that doesn't convert, an email sequence that doesn't retain, a product that lacks a clear positioning statement. Do the better version. Write a one-paragraph case study explaining what the problem was and why your version improves it.</p>
+
+      <p>This is, counterintuitively, often more impressive than mediocre real client work. It shows judgment — which is what you're ultimately being hired for.</p>
+
+      <h3>Option 2: Discounted Real Projects</h3>
+
+      <p>Reach out to three organizations — local businesses, non-profits, or early-stage startups — and offer to do a defined project at a steeply reduced rate (70–80% off) in exchange for a written testimonial and the right to use it publicly.</p>
+
+      <p>Be explicit about the arrangement in writing. Deliver exactly what you promised. Then ask for feedback that describes the outcome, not just the process. "Spencer delivered the project on time" is not a useful testimonial. "After Spencer rewrote our homepage, our demo booking rate went up 15%" is.</p>
+
+      <h3>Option 3: Case Studies on Your Own Work</h3>
+
+      <p>Built your own website, newsletter, side project, or tool? That's a case study. Freelancers routinely underestimate the value of their own projects as portfolio evidence — especially for clients who want someone with ownership mentality.</p>
+
+      <p>A case study on a project you built for yourself, with real outcomes (traffic, subscribers, revenue, time saved), demonstrates all the same skills as client work — without the client.</p>
+
+      <h2>The Case Study Format That Converts</h2>
+
+      <p>Every portfolio piece should answer these four questions:</p>
+
+      <ol>
+        <li><strong>What was the problem?</strong> What wasn't working, what was missing, or what opportunity existed?</li>
+        <li><strong>What did you decide, and why?</strong> What approach did you take? What decisions did you make that another person might not have?</li>
+        <li><strong>What did you do?</strong> The work itself, shown clearly with visuals, excerpts, or code snippets as appropriate.</li>
+        <li><strong>What happened?</strong> The outcome. Quantified where possible. Even rough metrics are better than "the client was happy."</li>
+      </ol>
+
+      <p>Most freelance portfolios answer questions 3 and skip the rest. Questions 1, 2, and 4 are where the persuasion actually lives.</p>
+
+      <h2>What to Include (and Not Include)</h2>
+
+      <p><strong>Include:</strong></p>
+      <ul>
+        <li>Three to five pieces, each with a written case study — not twenty pieces with zero context</li>
+        <li>Work that directly resembles what you want to do more of — not everything you've ever made</li>
+        <li>At least one testimonial, even from a non-paying project</li>
+        <li>A clear statement of who you help and with what — not a generic "I'm a designer/developer/writer"</li>
+      </ul>
+
+      <p><strong>Don't include:</strong></p>
+      <ul>
+        <li>Everything you've made. Curation signals judgment better than volume.</li>
+        <li>Work that doesn't match what you want to attract. A logo you made five years ago in a style you've abandoned will attract clients who want that style.</li>
+        <li>Work you can't explain. If you can't describe why you made the decisions you made, leave it out.</li>
+      </ul>
+
+      <h2>Where to Put It</h2>
+
+      <p>For most freelancers, a simple website is the right answer — not a PDF, not a LinkedIn profile, not a Behance gallery. A personal domain with a one-page case study format is sufficient to close clients.</p>
+
+      <p>The platform options, from simplest to most customizable:</p>
+      <ul>
+        <li><strong>Notion + Super:</strong> Build the portfolio in Notion, publish it as a website. Free to start, minimal friction.</li>
+        <li><strong>Cargo, Framer, or Squarespace:</strong> Template-based, polished, reasonable for visual work.</li>
+        <li><strong>Custom-built:</strong> Worth it if you're a developer or if the portfolio itself demonstrates your skill.</li>
+      </ul>
+
+      <p>What doesn't matter as much as most people think: the design of the portfolio page itself. Clients hiring a copywriter or strategist are not judging your visual design. Clients hiring a designer will notice. Match the polish level to what you're selling.</p>
+
+      <h2>How to Replace Spec Work as You Go</h2>
+
+      <p>Spec work and discounted projects are a bridge, not a destination. As you acquire real clients, add those case studies and phase out the oldest spec pieces. Within three to six months of actively freelancing, a portfolio built on spec work should be mostly replaced by real client results.</p>
+
+      <p>The goal is always to have your most recent, most relevant work at the top. Old work — even if it's real client work — should come down if it doesn't represent what you want to attract now.</p>
+    `,
+  },
+  {
+    slug: 'how-to-handle-difficult-freelance-clients',
+    title: 'How to Handle Difficult Freelance Clients (Without Losing Your Mind or the Project)',
+    excerpt:
+      "Difficult clients aren't always bad clients. Most of the behaviors that drive freelancers crazy are predictable, preventable, and manageable — once you know what's actually causing them.",
+    publishedAt: '2026-05-21',
+    readingMinutes: 8,
+    category: 'Client Management',
+    tags: ['clients', 'client management', 'communication', 'boundaries'],
+    metaTitle: 'How to Handle Difficult Freelance Clients: A Practical Guide',
+    metaDescription:
+      'Scope creep, late feedback, missed payments, and unreasonable demands. How to handle the most common difficult client behaviors without losing the project or your sanity.',
+    content: `
+      <p>Every freelancer has a nightmare client story. The one who emails at midnight. The one who wants revisions on the revisions. The one who pays 60 days late, every time. The one who approved the work and then decided they hated it after you submitted the invoice.</p>
+
+      <p>Here's what experience actually teaches: most "difficult" clients aren't malicious — they're anxious, disorganized, or operating without clear expectations. That's fixable. A smaller category genuinely shouldn't be your clients. Learning to tell the difference early saves months of misery.</p>
+
+      <h2>The Four Most Common Types of Difficult Clients</h2>
+
+      <h3>1. The Scope Expander</h3>
+
+      <p>Every deliverable comes with an attached "while you're at it." The project that was supposed to take three weeks is in month two. They mean well — they're just excited and not tracking what "agreed scope" means.</p>
+
+      <p><strong>Fix:</strong> Re-anchor every conversation to the signed contract. "That's a great idea — it's outside our current scope, but I can put together a quick quote for adding it on." Do not absorb the work silently. Every silent yes trains them to keep asking.</p>
+
+      <h3>2. The Feedback Ghost</h3>
+
+      <p>Feedback rounds have a two-week turnaround. Your timeline slips. Your invoices wait. Other projects get blocked. They're busy — they'll get to it.</p>
+
+      <p><strong>Fix:</strong> Put client approval timelines in the contract. "If feedback is not received within five business days, the timeline will be extended by the same number of days, and rush fees apply if the client requires the original delivery date." Most clients respond faster once there's a consequence to delay that they've agreed to in writing.</p>
+
+      <h3>3. The Midnight Emailer</h3>
+
+      <p>They email at 11pm on Friday expecting a response by 9am Monday. Or they text. Or both. Every message feels urgent. The anxiety is contagious.</p>
+
+      <p><strong>Fix:</strong> State your communication hours in the welcome packet (not just your contract). "I respond to emails Monday through Friday, 9am–6pm [timezone]. Messages received outside these hours will be addressed the next business day." Do not respond to off-hours messages. One late-night response creates the expectation permanently.</p>
+
+      <h3>4. The Retroactive Requester</h3>
+
+      <p>They approved the design. They received the final files. They paid the invoice. Six weeks later: "I've been thinking, and I'd like to make a few changes." The project is closed. You've already moved on.</p>
+
+      <p><strong>Fix:</strong> The approval clause in your contract. Work is approved at sign-off or after five business days of silence. Post-approval changes are new work, invoiced at your current rate. State this clearly, enforce it consistently.</p>
+
+      <h2>The Conversation That Fixes Most Situations</h2>
+
+      <p>When a client crosses a boundary — scope, communication style, payment terms — the first move is a direct, non-confrontational conversation. Most freelancers avoid this because it feels like conflict. In practice, it almost always goes better than anticipated.</p>
+
+      <p>The format:</p>
+      <blockquote>
+        <p>"I want to flag something before it becomes a problem. [Specific behavior] is making it difficult for me to [specific impact]. Going forward, can we [specific request]? That would help me continue delivering the quality of work you deserve."</p>
+      </blockquote>
+
+      <p>This approach names the issue without blaming, explains the impact without dramatizing, and proposes a solution. Most clients respond constructively. The ones who don't are telling you something important.</p>
+
+      <h2>When to Fire a Client</h2>
+
+      <p>Some clients shouldn't be your clients. The signals that a relationship needs to end:</p>
+
+      <ul>
+        <li>They've disputed or delayed payment more than once with no credible explanation</li>
+        <li>They routinely disrespect your working hours or ignore your communication norms after a direct conversation</li>
+        <li>The scope has expanded so far beyond the original agreement that the project is no longer economically viable</li>
+        <li>Your stress on this project is affecting the quality of work on other projects</li>
+        <li>You find yourself dreading every interaction with them</li>
+      </ul>
+
+      <p>Ending a client relationship is not failure. It's resource allocation. Every hour spent managing a bad client is an hour you can't spend on a better one.</p>
+
+      <p>The offboarding script:</p>
+      <blockquote>
+        <p>"I've given this careful thought, and I don't think this engagement is the right fit for either of us at this point. I'm happy to complete [specific remaining deliverable] and transition any assets and documentation before our engagement closes. I want to make this as smooth as possible for you."</p>
+      </blockquote>
+
+      <p>Don't over-explain. Don't apologize for a decision that's right for your business. Give reasonable notice. Deliver what you owe. Then close the chapter.</p>
+
+      <h2>The System That Prevents Most of This</h2>
+
+      <p>The single best investment against difficult client behaviors is pre-project infrastructure: a real contract, a welcome packet that sets working norms, an intake process that surfaces red flags, and an approval process that's in writing.</p>
+
+      <p>Clients who cause problems later almost always show warning signs during onboarding. They resist signing a contract. They push back on the deposit. They're unclear on what success looks like. They respond to your intake form with "I'll explain everything on the call."</p>
+
+      <p>Experience makes these signals legible. Systems make them catchable even before experience does.</p>
+
+      <h2>The Mental Reframe That Helps</h2>
+
+      <p>Difficult client behaviors are often expensive symptoms of a client who is anxious, unclear, or overwhelmed — not malicious. When you treat the symptom (their behavior) by addressing the root cause (their uncertainty), most problems resolve without confrontation.</p>
+
+      <p>Over-communication early in a project — more status updates than feel necessary, more clarity on what's coming next than seems needed — eliminates the anxiety that drives most bad behavior. The Feedback Ghost emails at midnight because they're not sure what's happening on the project. The Scope Expander keeps adding things because they don't trust the original brief to cover their needs.</p>
+
+      <p>A well-run client onboarding process doesn't just make you look professional — it makes clients feel safe. Safe clients are significantly easier to work with.</p>
+    `,
+  },
 
 export function getPost(slug: string): BlogPost | undefined {
   return POSTS.find((p) => p.slug === slug)

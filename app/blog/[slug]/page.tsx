@@ -43,6 +43,18 @@ const CATEGORY_CTA: Record<string, { heading: string; body: string; href: string
     href: '/shop/freelancer-os',
     label: 'Get Freelancer OS — $29',
   },
+  Business: {
+    heading: 'Know your real rate before your next proposal.',
+    body: 'The free FreelanceKit Rate Calculator tells you your minimum, recommended, and premium hourly rate — based on your actual income goal, hours, and tax rate. No signup required.',
+    href: '/tools/rate-calculator',
+    label: 'Calculate my rate (free)',
+  },
+  'Tools & Systems': {
+    heading: 'The tool that ties all of this together.',
+    body: 'The Freelancer OS is a complete Notion workspace: CRM, project hub, invoice tracker, and client portal — all linked. One-time $29, no subscription.',
+    href: '/shop/freelancer-os',
+    label: 'Get Freelancer OS — $29',
+  },
   'Getting Started': {
     heading: 'Start with the right infrastructure.',
     body: 'The Complete Bundle gives you the Freelancer OS workspace, Client Onboarding Bundle, and AI Prompt Pack — everything you need to launch a professional freelance practice.',
