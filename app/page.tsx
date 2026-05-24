@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Star, Shield, Zap, Users, BookOpen, Clock, DollarSign, Gift } from 'lucide-react'
+import { ArrowRight, Star, Shield, Zap, Users, BookOpen, Clock, DollarSign, Gift, Calculator } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
 import EmailCapture from '@/components/EmailCapture'
 import { getFeaturedProducts } from '@/lib/products'
@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: `${SITE.name} — ${SITE.tagline}`,
   description: SITE.description,
   alternates: { canonical: SITE.url },
+  openGraph: {
+    type: 'website',
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description: SITE.description,
+    url: SITE.url,
+  },
 }
 
 const FEATURES = [
@@ -108,8 +114,29 @@ const FAQ = [
 export default function HomePage() {
   const featured = getFeaturedProducts()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE.name,
+    url: SITE.url,
+    description: SITE.description,
+    email: SITE.email,
+    sameAs: [`https://twitter.com/freelancekit`],
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: '17',
+      highPrice: '49',
+      offerCount: '4',
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-gradient-to-b from-sand-50 to-white pt-20 pb-24 sm:pt-28 sm:pb-32">
         {/* Background orbs */}
@@ -232,40 +259,58 @@ export default function HomePage() {
             <h2 className="font-display text-3xl font-bold text-ink mb-2">Try before you buy</h2>
             <p className="text-sand-500">Free tools that give you a taste of the system — no signup required.</p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-3 gap-5">
             <Link
               href="/tools/rate-calculator"
-              className="group flex items-start gap-5 bg-brand-50 border border-brand-200 rounded-2xl p-7 hover:border-brand-400 hover:shadow-md transition-all"
+              className="group flex flex-col gap-4 bg-brand-50 border border-brand-200 rounded-2xl p-6 hover:border-brand-400 hover:shadow-md transition-all"
             >
-              <div className="w-12 h-12 rounded-xl bg-brand-600 flex items-center justify-center flex-shrink-0">
-                <DollarSign className="w-6 h-6 text-white" />
+              <div className="w-11 h-11 rounded-xl bg-brand-600 flex items-center justify-center">
+                <DollarSign className="w-5 h-5 text-white" />
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-display font-bold text-ink">Freelance Rate Calculator</h3>
-                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">Free</span>
+                  <h3 className="font-display font-bold text-ink text-sm">Rate Calculator</h3>
+                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full">Free</span>
                 </div>
-                <p className="text-sand-500 text-sm mb-3">Enter your income goal, hours, and tax rate. Get your minimum, recommended, and premium hourly rates instantly.</p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 group-hover:gap-2.5 transition-all">
-                  Calculate my rate <ArrowRight className="w-3.5 h-3.5" />
+                <p className="text-sand-500 text-xs leading-relaxed mb-3">Turn your income goal into a minimum, recommended, and premium hourly rate.</p>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-brand-600 group-hover:gap-2 transition-all">
+                  Calculate <ArrowRight className="w-3 h-3" />
+                </span>
+              </div>
+            </Link>
+            <Link
+              href="/tools/project-estimator"
+              className="group flex flex-col gap-4 bg-amber-50 border border-amber-200 rounded-2xl p-6 hover:border-amber-400 hover:shadow-md transition-all"
+            >
+              <div className="w-11 h-11 rounded-xl bg-amber-500 flex items-center justify-center">
+                <Calculator className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-display font-bold text-ink text-sm">Project Estimator</h3>
+                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full">Free</span>
+                </div>
+                <p className="text-sand-500 text-xs leading-relaxed mb-3">Get a quote range, deposit amount, and payment schedule for any project in seconds.</p>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-amber-600 group-hover:gap-2 transition-all">
+                  Estimate <ArrowRight className="w-3 h-3" />
                 </span>
               </div>
             </Link>
             <Link
               href="/free"
-              className="group flex items-start gap-5 bg-sand-50 border border-sand-200 rounded-2xl p-7 hover:border-brand-300 hover:shadow-md transition-all"
+              className="group flex flex-col gap-4 bg-sand-50 border border-sand-200 rounded-2xl p-6 hover:border-brand-300 hover:shadow-md transition-all"
             >
-              <div className="w-12 h-12 rounded-xl bg-amber-400 flex items-center justify-center flex-shrink-0">
-                <Gift className="w-6 h-6 text-white" />
+              <div className="w-11 h-11 rounded-xl bg-amber-400 flex items-center justify-center">
+                <Gift className="w-5 h-5 text-white" />
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-display font-bold text-ink">Free Notion Starter Template</h3>
-                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">Free</span>
+                  <h3 className="font-display font-bold text-ink text-sm">Free Notion Template</h3>
+                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full">Free</span>
                 </div>
-                <p className="text-sand-500 text-sm mb-3">Client list, invoice tracker, and weekly review template — duplicated to your Notion workspace in under 15 minutes.</p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 group-hover:gap-2.5 transition-all">
-                  Get the free template <ArrowRight className="w-3.5 h-3.5" />
+                <p className="text-sand-500 text-xs leading-relaxed mb-3">Client list, invoice tracker, and weekly review template — set up in Notion in 15 minutes.</p>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-brand-600 group-hover:gap-2 transition-all">
+                  Get template <ArrowRight className="w-3 h-3" />
                 </span>
               </div>
             </Link>
