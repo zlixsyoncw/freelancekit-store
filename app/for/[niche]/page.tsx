@@ -228,6 +228,216 @@ const NICHES: Record<string, NicheConfig> = {
     },
     keywords: ['notion template freelance photographer', 'photography business management notion', 'photographer client system'],
   },
+
+  coaches: {
+    title: 'Freelance Coaches',
+    noun: 'coach',
+    headline: 'Spend More Time Coaching. Zero Time on Admin.',
+    subheadline:
+      'Notion templates for life coaches, business coaches, and career coaches who want to deliver an exceptional client experience — without spending half the week on scheduling, session notes, and invoicing.',
+    pains: [
+      'Session notes scattered across apps, email threads, and sticky notes',
+      'No standard intake process — every client onboarding feels improvised',
+      'Difficult to track which clients have paid and which still owe you',
+      'Discovery calls that go nowhere because prospects aren\'t properly pre-qualified',
+    ],
+    benefits: [
+      {
+        heading: 'One workspace for every client relationship',
+        body: 'Track each client\'s goals, session notes, action items, and next appointment in one linked database. Walk into every session knowing exactly where they left off — without digging through emails.',
+      },
+      {
+        heading: 'Professional intake that sets the tone',
+        body: 'Use a consistent welcome packet and intake questionnaire with every client. They come in prepared. You come in knowing their goals, challenges, and constraints before the first call.',
+      },
+      {
+        heading: 'Payment tracking without the awkwardness',
+        body: 'See all outstanding balances, program payment schedules, and session counts at a glance. Know who\'s due for renewal before the conversation gets uncomfortable.',
+      },
+    ],
+    tools: ['Client relationship database', 'Session notes & action item tracker', 'Invoice and payment schedule tracker', 'Client intake questionnaire template'],
+    testimonial: {
+      quote:
+        "I was keeping client notes in a mix of Google Docs and my notebook. Now every client has a complete record — goals, sessions, action items, everything. My clients actually comment on how organized the whole experience feels.",
+      name: 'Rachel B.',
+      role: 'Business coach for early-stage founders',
+    },
+    primaryProduct: {
+      name: 'Complete Bundle',
+      href: '/shop/complete-bundle',
+      price: '$49',
+      description: 'Freelancer OS + Client Onboarding Bundle + AI Prompt Pack. Everything a freelance coach needs to deliver a professional experience from first call to final session.',
+    },
+    keywords: ['notion template freelance coach', 'coaching client management notion', 'life coach business system'],
+  },
+
+  marketers: {
+    title: 'Freelance Marketers',
+    noun: 'marketer',
+    headline: 'Run Campaigns. Track Results. Get Paid for Both.',
+    subheadline:
+      'Notion templates for freelance digital marketers, SEO specialists, and paid media managers who want to manage multiple retainer clients without the chaos.',
+    pains: [
+      'Tracking deliverables across 4–6 retainer clients without missing anything',
+      'Clients who shift priorities mid-month and expect the same deliverables',
+      'Monthly reporting rebuilt from scratch every time — hours of avoidable work',
+      'Scope creep disguised as "just a quick question" or "one more channel"',
+    ],
+    benefits: [
+      {
+        heading: 'Retainer scope tracker for every client',
+        body: 'Define exactly what each retainer includes — posts, reports, ad reviews, strategy calls — and track delivery against it. When a client asks for more, you have a clear record of what they\'re already getting.',
+      },
+      {
+        heading: 'Campaign dashboard across all accounts',
+        body: 'See the status of every campaign across all clients: what\'s running, pending approval, and due this week. One view replaces twenty Slack threads.',
+      },
+      {
+        heading: 'Monthly report template, ready to fill',
+        body: 'Stop building reports from scratch. A consistent template means clients know what to expect — and you finish reporting in 30 minutes instead of 3 hours.',
+      },
+    ],
+    tools: ['Multi-client retainer tracker', 'Campaign status dashboard', 'Invoice and payment tracker', 'Monthly report template'],
+    testimonial: {
+      quote:
+        "Managing 6 retainer clients used to mean constant context-switching and dropped balls. Now I have a single view of what every client is owed this month. I haven't missed a deliverable in three months.",
+      name: 'Keisha W.',
+      role: 'Freelance digital marketing consultant, e-commerce brands',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'CRM, project hub, retainer tracker, invoice tracker, and client portal — all linked in Notion. Built for freelancers managing multiple retainer clients.',
+    },
+    keywords: ['notion template freelance marketer', 'digital marketing freelance system', 'freelance marketing client management'],
+  },
+
+  'virtual-assistants': {
+    title: 'Virtual Assistants',
+    noun: 'virtual assistant',
+    headline: 'Serve More Clients. Track Every Minute. Chase Zero Invoices.',
+    subheadline:
+      'Notion templates for virtual assistants and online business managers who juggle multiple clients and need a clear system to track tasks, time, and invoices — without spreadsheet chaos.',
+    pains: [
+      'Losing track of which tasks belong to which client when juggling 4+ clients',
+      'Time tracking spread across apps, timers, and mental notes',
+      'Inconsistent monthly invoicing — some months you over-deliver, some you under-charge',
+      'No easy way to show clients what you\'ve completed without a weekly report from scratch',
+    ],
+    benefits: [
+      {
+        heading: 'Per-client task boards, unified daily view',
+        body: 'Each client gets their own task board — but you see all pending tasks in one unified view. Know exactly what\'s due today across every client, without switching apps.',
+      },
+      {
+        heading: 'Time log that feeds directly into invoices',
+        body: 'Log time against each client as you work. At month-end, your invoice is already calculated — hours × rate, per client. No more guessing or reconstructing from memory.',
+      },
+      {
+        heading: 'Client portal for transparent communication',
+        body: 'Share a Notion page with each client showing their task status and what\'s been completed this week. Eliminates the "what are you working on?" check-ins that break your flow.',
+      },
+    ],
+    tools: ['Multi-client task boards', 'Time log with monthly totals', 'Per-client invoice tracker', 'Client status portal'],
+    testimonial: {
+      quote:
+        "Before this system I was running client work out of my inbox and a pile of Google Docs. Now I have one place for everything. Invoicing used to take me two hours at the end of each month — now it takes 20 minutes.",
+      name: 'Sienna J.',
+      role: 'Virtual assistant and OBM, 9 clients',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'Notion workspace for VAs: multi-client task tracking, time log with invoice formulas, CRM, and client portals. Works on Notion\'s free plan.',
+    },
+    keywords: ['notion template virtual assistant', 'VA client management system', 'virtual assistant business notion'],
+  },
+
+  writers: {
+    title: 'Freelance Writers',
+    noun: 'writer',
+    headline: 'Get Paid for Every Draft — and Every Revision',
+    subheadline:
+      'Notion templates for freelance writers, content strategists, and ghostwriters who want clear deliverables, painless invoicing, and a client experience that earns referrals.',
+    pains: [
+      'Revision requests that go well past what was quoted — with no documentation to push back',
+      'Clients who disappear after delivery, then resurface demanding changes weeks later',
+      'Managing deadlines, briefs, and drafts across multiple clients in one messy inbox',
+      'Invoicing that feels like chasing because there\'s no consistent process',
+    ],
+    benefits: [
+      {
+        heading: 'Project hub with revision round tracking',
+        body: 'Every project logs its contracted revision count. When a client asks for round four on a two-revision contract, you have the documentation ready — and a quote for additional rounds.',
+      },
+      {
+        heading: 'Brief, draft, and approval in one place',
+        body: 'Store the creative brief, link drafts, and track approval status per project. Know at a glance which pieces are awaiting client approval, in revision, or final.',
+      },
+      {
+        heading: 'Invoice tracker with outstanding balance view',
+        body: 'See all unpaid invoices in one view. Set follow-up dates. Know your monthly revenue in under 10 seconds — and never let a payment go stale.',
+      },
+    ],
+    tools: ['Project hub with revision tracking', 'Brief and draft library', 'Invoice tracker with follow-up dates', 'Client CRM with pipeline'],
+    testimonial: {
+      quote:
+        "I've been freelancing for five years and revision disputes used to be constant. Now every project starts with a signed brief and a clear revision count. I've had exactly one scope argument since — and I won it.",
+      name: 'Megan H.',
+      role: 'Freelance B2B content writer and ghostwriter',
+    },
+    primaryProduct: {
+      name: 'Client Onboarding Bundle',
+      href: '/shop/client-onboarding-bundle',
+      price: '$19',
+      description: 'Proposal template with revision scope, contract with approval clause, and welcome packet — everything you need to set clear expectations from day one.',
+    },
+    keywords: ['notion template freelance writer', 'freelance writing client management', 'content writer business system'],
+  },
+
+  'social-media-managers': {
+    title: 'Social Media Managers',
+    noun: 'social media manager',
+    headline: 'Manage More Accounts. Miss Zero Deadlines.',
+    subheadline:
+      'Notion templates for freelance social media managers who juggle multiple client accounts, approval workflows, and monthly reporting — without losing track of what\'s live and what\'s late.',
+    pains: [
+      'Content approval requests scattered across DMs, email, and comment threads',
+      'Clients who want "just one more post" without adjusting the retainer scope',
+      'Monthly reporting rebuilt from scratch every time — a half-day of avoidable work',
+      'No clear record of deliverables, so scope debates are impossible to win',
+    ],
+    benefits: [
+      {
+        heading: 'Content calendar with approval tracking',
+        body: 'Track every post — platform, status, scheduled date, and whether it\'s been client-approved. One view shows you what\'s draft, pending approval, scheduled, and live across every account.',
+      },
+      {
+        heading: 'Per-client retainer scope log',
+        body: 'Define what each retainer includes (posts per platform, stories, reports, strategy calls) and track delivery against it. When a client asks for more, you have a record of what they\'re already getting.',
+      },
+      {
+        heading: 'Monthly report template, ready to use',
+        body: 'Stop rebuilding your report from zero. A consistent template covers reach, engagement, follower growth, and top content. Fill it in and send — in 30 minutes, not three hours.',
+      },
+    ],
+    tools: ['Multi-client content calendar', 'Retainer scope and deliverable tracker', 'Client CRM with approval workflow', 'Monthly report template'],
+    testimonial: {
+      quote:
+        "Managing 5 clients' social media used to feel chaotic — I was always afraid of dropping the ball. Now I have a weekly view of what needs to go live across all accounts, and content approval is a single shared Notion page. Game-changer.",
+      name: 'Jade T.',
+      role: 'Freelance social media manager, 5 brand clients',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'Notion workspace with content calendar, multi-client CRM, retainer scope tracker, and invoice tracking. Built for social media managers who run multiple accounts.',
+    },
+    keywords: ['notion template social media manager', 'freelance social media management system', 'content calendar notion template'],
+  },
 }
 
 export function generateStaticParams() {
@@ -248,7 +458,27 @@ export default function NichePage({ params }: { params: { niche: string } }) {
   const config = NICHES[params.niche]
   if (!config) notFound()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `FreelanceKit for ${config.title}`,
+    description: config.subheadline,
+    url: `${SITE.url}/for/${params.niche}`,
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+        { '@type': 'ListItem', position: 2, name: `For ${config.title}`, item: `${SITE.url}/for/${params.niche}` },
+      ],
+    },
+  }
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
       {/* Breadcrumb */}
       <div className="text-sm text-sand-400 mb-8">
@@ -376,5 +606,6 @@ export default function NichePage({ params }: { params: { niche: string } }) {
         </div>
       </div>
     </div>
+    </>
   )
 }

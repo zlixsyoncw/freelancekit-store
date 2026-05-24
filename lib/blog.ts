@@ -1071,7 +1071,6 @@ export const POSTS: BlogPost[] = [
       <p>Raising your rates filters out the wrong clients automatically. The first time you quote $200/hour and someone says yes, you'll understand why you've been undercharging. Start there and work backward to who you need to talk to to get that yes.</p>
     `,
   },
-]
 
   {
     slug: 'how-to-build-a-freelance-portfolio',
@@ -1260,6 +1259,357 @@ export const POSTS: BlogPost[] = [
       <p>A well-run client onboarding process doesn't just make you look professional — it makes clients feel safe. Safe clients are significantly easier to work with.</p>
     `,
   },
+
+  {
+    slug: 'how-to-find-freelance-clients-on-linkedin',
+    title: 'How to Find Freelance Clients on LinkedIn (Without Being That Person)',
+    excerpt:
+      'LinkedIn is the highest-converting freelance client channel that most freelancers use completely wrong. Here\'s the approach that generates inbound leads without spamming your network.',
+    publishedAt: '2026-05-22',
+    readingMinutes: 10,
+    category: 'Business',
+    tags: ['linkedin', 'clients', 'business', 'freelancing', 'outreach'],
+    metaTitle: 'How to Find Freelance Clients on LinkedIn (The Right Way)',
+    metaDescription:
+      'Stop cold pitching and start attracting. Here\'s how to optimize your LinkedIn profile, create content that generates inbound leads, and use outreach that actually works.',
+    content: `
+      <p>LinkedIn is the only social platform where your exact target clients log in and actively think about business. Used correctly, it generates inbound freelance leads consistently — without cold pitching, without a big following, and without embarrassing yourself.</p>
+
+      <p>Used incorrectly (which is how most freelancers use it), it produces a lot of "thanks for connecting!" messages that go nowhere.</p>
+
+      <p>Here's what actually works.</p>
+
+      <h2>Step 1: Your Profile Is a Landing Page, Not a Resume</h2>
+
+      <p>The biggest LinkedIn mistake freelancers make is building a resume-style profile. Dates, job titles, responsibilities — structured for job seekers, not client attractors.</p>
+
+      <p>Your profile should answer one question in under 10 seconds: <em>What do you do and who do you do it for?</em></p>
+
+      <p><strong>Headline:</strong> Not "Freelance Designer." Instead: "Freelance landing page designer for SaaS startups | $2M+ in client revenue attributed." Lead with specificity and proof if you have it.</p>
+
+      <p><strong>About section:</strong> Write this like a cold email to your ideal client. Three paragraphs: (1) who you help and what results you drive, (2) how you do it and what makes your approach different, (3) what to do next — send a message, visit your website, or see your work. Include the words your ideal client would use when searching for help.</p>
+
+      <p><strong>Featured section:</strong> Pin your best work, a relevant case study, or your best piece of content here. This is what people look at immediately after your headline.</p>
+
+      <p><strong>Experience:</strong> Write each role as outcomes, not responsibilities. "Helped 14 SaaS companies increase trial-to-paid conversion by redesigning their in-app onboarding" beats "Responsible for UX design."</p>
+
+      <h2>Step 2: Post Content That Attracts Clients (Not Just Peers)</h2>
+
+      <p>Most freelancers on LinkedIn write for other freelancers — tips about setting rates, dealing with clients, imposter syndrome. This content gets likes from peers who will never hire you.</p>
+
+      <p>Client-attracting content demonstrates expertise to the people who have budget. The difference:</p>
+
+      <ul>
+        <li><strong>Peer content:</strong> "3 signs you're undercharging for your work"</li>
+        <li><strong>Client content:</strong> "The landing page structure that took our client's conversion rate from 1.2% to 3.8% — and what we changed"</li>
+      </ul>
+
+      <p>Write about problems your clients face, not problems you face. Share insights from your work (anonymized if needed). Post case study breakdowns. Share observations about your industry that make potential clients think "this person understands our world."</p>
+
+      <p><strong>The posting cadence that works without burning out:</strong> 2 posts per week. One substantive, one conversational. Stay consistent for 90 days before evaluating results.</p>
+
+      <h2>Step 3: Engage Strategically Before You Outreach</h2>
+
+      <p>Before you send a connection request or message to a prospect, warm the relationship by engaging with their content. Comment with genuine insight — not "Great post!" but something that adds to the conversation.</p>
+
+      <p>One or two meaningful comments over two to three weeks makes you recognizable when you do reach out. Your name has already appeared in their notifications. The cold message becomes a warm one.</p>
+
+      <h2>Step 4: The Connection Request That Actually Gets Accepted</h2>
+
+      <p>Don't use the default "I'd like to connect" message. Write a note. Keep it to two sentences. Reference something specific about them or their work. Make it clear you're not about to pitch them:</p>
+
+      <blockquote>
+        <p>"Hi Sarah — I've been following your posts on enterprise SaaS onboarding for a while. Lots of overlap with the work I do on the design side. Happy to connect."</p>
+      </blockquote>
+
+      <p>That's it. No ask. No pitch. Just a human connection from someone with a related interest.</p>
+
+      <h2>Step 5: First Message After Connecting</h2>
+
+      <p>Wait 48–72 hours after they accept. Then send a message that references something specific and gives value before asking for anything:</p>
+
+      <blockquote>
+        <p>"Thanks for connecting, Sarah. I read your post on the enterprise onboarding bottleneck — your point about the handoff between sales and CS resonated. I've seen a similar pattern with three clients this year. If you're ever curious how others have solved it, happy to share what's worked. No agenda."</p>
+      </blockquote>
+
+      <p>This message: references a specific thing they wrote, shows you understood it, positions you as someone with relevant experience, and makes a low-pressure offer. It's not a pitch. It's a conversation starter.</p>
+
+      <p>Some won't respond. Some will say thanks. A few will ask a follow-up question — and that's when a working relationship begins.</p>
+
+      <h2>Step 6: The Soft Pitch (Only When the Time Is Right)</h2>
+
+      <p>After two or three exchanges, if the conversation has moved into their actual problems and your relevant experience, you can introduce the possibility of working together:</p>
+
+      <blockquote>
+        <p>"From what you've described, this sounds like exactly the kind of project I work on with clients. If you ever want a second pair of eyes on the onboarding flow — even just a 20-minute call — I'm happy to do that. No commitment."</p>
+      </blockquote>
+
+      <p>The key phrase: "No commitment." It lowers the stakes for them to say yes to a conversation.</p>
+
+      <h2>What Not to Do</h2>
+
+      <ul>
+        <li><strong>Don't pitch in the connection request.</strong> Immediate pitch = immediate ignore.</li>
+        <li><strong>Don't copy-paste the same message to 50 people.</strong> They can tell. One well-researched message beats 50 templates every time.</li>
+        <li><strong>Don't comment with "Great insight!" on every post.</strong> It's spam with extra steps.</li>
+        <li><strong>Don't send a portfolio link in the first message.</strong> Nobody asked for it yet.</li>
+        <li><strong>Don't give up after 30 days.</strong> LinkedIn is a long game. Profiles that post consistently for 6+ months build compounding organic reach.</li>
+      </ul>
+
+      <h2>The Numbers to Expect</h2>
+
+      <p>With a well-optimized profile and consistent content:</p>
+
+      <ul>
+        <li>2–5 inbound messages per month from potential clients (after 3–6 months of consistency)</li>
+        <li>1–3 qualified leads per month from outreach (at a 20–30 message volume)</li>
+        <li>1–2 discovery calls per month converting from the above</li>
+        <li>1 new client every 1–3 months once the system is running</li>
+      </ul>
+
+      <p>These aren't spectacular numbers in isolation. But they compound. A client from LinkedIn refers another. Content from six months ago still attracts profile visits. The flywheel builds slowly and then accelerates.</p>
+
+      <p>The freelancers who make LinkedIn work treat it as infrastructure, not a fire hose. Show up consistently, provide genuine value, and have real conversations. That's the entire strategy.</p>
+    `,
+  },
+
+  {
+    slug: 'freelance-time-management',
+    title: 'Time Management for Freelancers: The System That Actually Works',
+    excerpt:
+      'Traditional time management advice was written for office workers with a fixed schedule. Freelancers need a different approach — one that handles unpredictable client demands, creative work, and business development all at once.',
+    publishedAt: '2026-05-20',
+    readingMinutes: 9,
+    category: 'Tools & Productivity',
+    tags: ['time management', 'productivity', 'freelancing', 'systems', 'tools'],
+    metaTitle: 'Time Management for Freelancers: The System That Works',
+    metaDescription:
+      'Stop adapting office time management advice to freelance work. Here\'s the system built specifically for freelancers — covering client work, business tasks, and the deep focus your best work requires.',
+    content: `
+      <p>Most time management advice was designed for people with a boss, a desk, and a fixed schedule. Freelancers have none of those things — and following advice built around them leads to guilt about the system instead of actual improvement in how you work.</p>
+
+      <p>Here's a system built specifically for how freelance work actually flows.</p>
+
+      <h2>The Core Problem: Freelancers Have Three Jobs at Once</h2>
+
+      <p>An office worker has one job. A freelancer has three:</p>
+
+      <ol>
+        <li><strong>Doing the work</strong> — delivering client projects</li>
+        <li><strong>Getting the work</strong> — sales, proposals, client calls, outreach</li>
+        <li><strong>Running the business</strong> — invoicing, admin, bookkeeping, taxes</li>
+      </ol>
+
+      <p>Most freelancers manage time for job 1 reasonably well (deadlines are real). Jobs 2 and 3 get squeezed into whatever gaps remain — which means sales only happens when work is slow, and admin piles up until it becomes a crisis.</p>
+
+      <p>A good freelance time management system allocates dedicated time for all three, regardless of how busy the client queue is.</p>
+
+      <h2>The Weekly Template: Your Non-Negotiable Structure</h2>
+
+      <p>The most effective time structure for freelancers is a recurring weekly template — not a rigid schedule, but a consistent allocation of <em>types</em> of work to <em>types</em> of time blocks.</p>
+
+      <p>A structure that works for most freelancers:</p>
+
+      <ul>
+        <li><strong>Monday:</strong> Weekly review + planning (1 hr) → Client work (remaining time)</li>
+        <li><strong>Tuesday–Thursday:</strong> Deep client work (protected, no calls before 11am)</li>
+        <li><strong>Friday morning:</strong> Business tasks — invoicing, bookkeeping, admin</li>
+        <li><strong>Friday afternoon:</strong> Sales and business development — follow-up, outreach, proposals</li>
+      </ul>
+
+      <p>Adjust for your work type. The key principle: <strong>protect your best cognitive hours for client work</strong>, and batch administrative and sales tasks into predictable blocks so they don't leak into everything else.</p>
+
+      <h2>Time Blocking, Not Task Lists</h2>
+
+      <p>Task lists are inventory. They tell you what needs to be done but not when you'll do it. A task sitting on a list for three days is a task that hasn't happened yet.</p>
+
+      <p>Time blocking converts tasks into appointments with yourself. Instead of "write proposal for Acme," your calendar says "Acme proposal — Tuesday 9–11am." It's scheduled. It happens.</p>
+
+      <p>Rules for effective freelance time blocking:</p>
+
+      <ul>
+        <li>Block 20% more time than you think a task needs</li>
+        <li>Include transition time between client work on different projects</li>
+        <li>Don't block more than 4 hours of deep work in a single day — cognitive quality degrades</li>
+        <li>Block client calls in clusters, not scattered throughout the week</li>
+        <li>Leave buffer blocks for responding to client requests (assuming 30–45 min/day)</li>
+      </ul>
+
+      <h2>Track Time Even When You Charge Flat Rates</h2>
+
+      <p>Most experienced freelancers charge by project rather than by the hour. Many use this as a reason to stop tracking time. It's a mistake.</p>
+
+      <p>Time tracking on flat-rate projects serves one critical function: it tells you your effective hourly rate. That rate is the single most important number in your business.</p>
+
+      <p>After six months of tracking, you'll know which project types and client profiles produce the best revenue per hour. You'll know which "simple" projects that you underquote actually take 40 hours. You'll stop repeating the same pricing mistakes because you can see them in data.</p>
+
+      <p>Tools for tracking without friction:</p>
+      <ul>
+        <li><strong>Toggl</strong> — dead-simple one-click timer, free plan works</li>
+        <li><strong>Clockify</strong> — free, tags by client and project</li>
+        <li><strong>Notion time log</strong> — if you want everything in one workspace</li>
+      </ul>
+
+      <h2>The Weekly Review: 60 Minutes That Pays for Itself</h2>
+
+      <p>The weekly review is the highest-leverage time management practice for freelancers. Done every Monday morning (or Friday afternoon), it takes 45–60 minutes and answers four questions:</p>
+
+      <ol>
+        <li>What did I complete last week? (capture wins, not just incomplete tasks)</li>
+        <li>What's the status of every active project? (nothing should be invisible)</li>
+        <li>What are the three most important things this week? (prioritize before urgency decides for you)</li>
+        <li>What business or admin tasks need to happen this week? (invoicing, follow-ups, etc.)</li>
+      </ol>
+
+      <p>Freelancers who do this consistently almost never miss deadlines, rarely let invoices go stale, and have significantly less anxiety about their workload — because the weekly review makes the invisible visible.</p>
+
+      <h2>Managing Client Responsiveness Without Being On-Call</h2>
+
+      <p>One of the most common time management problems for freelancers is the expectation of immediate availability. Clients send a message; you feel compelled to respond within minutes. The cognitive cost of this is enormous — you never fully enter deep focus because you're always half-listening for notifications.</p>
+
+      <p>Set a response time standard and communicate it proactively. Something like:</p>
+
+      <blockquote>
+        <p>"I check messages twice a day — at 9am and 4pm — and respond within a few hours during business days. For urgent issues, [phone/text] is the best channel."</p>
+      </blockquote>
+
+      <p>Put this in your welcome packet, mention it during onboarding, and include it in your email signature. Most clients are relieved to have clear expectations — and the best clients prefer working with a freelancer who has a professional process over one who responds to messages at midnight.</p>
+
+      <h2>The Energy Schedule: Not All Hours Are Equal</h2>
+
+      <p>Time management advice often treats hours as fungible — an hour is an hour. This is wrong. A freelancer at peak cognitive function at 9am can produce work in 2 hours that would take 5 hours at 3pm.</p>
+
+      <p>Track your energy, not just your time. For one week, note your energy and focus quality at different times of day. Most people find:</p>
+
+      <ul>
+        <li><strong>Peak hours:</strong> 90–120 minutes of high-quality focused work, usually mid-morning or mid-afternoon</li>
+        <li><strong>Secondary hours:</strong> Good for client calls, review work, emails — requires engagement but not creative output</li>
+        <li><strong>Low hours:</strong> Admin tasks only — invoicing, scheduling, updating your CRM</li>
+      </ul>
+
+      <p>Schedule your most important client work in your peak hours. Never schedule a client call during your peak creative window unless you have no choice. Protect those hours like an appointment you can't cancel — because the quality of your client deliverables depends on it.</p>
+
+      <h2>The One Metric That Tells You If Your System Is Working</h2>
+
+      <p>After 90 days of using any time management system, one metric tells you if it's working: <strong>your effective hourly rate across all projects.</strong></p>
+
+      <p>If you're making $80/hr on your best projects but $30/hr on your worst (because they run long), your time management system isn't allocating your best hours to your best work. Fix the allocation, not the hours.</p>
+
+      <p>Most freelance time management failures are actually pricing and scoping failures in disguise. The work expands because the scope was unclear. The project runs long because revisions weren't limited. The invoice feels late because there was no payment timeline in the contract.</p>
+
+      <p>Time management solves for how you use the hours you have. Contracts and pricing solve for how many hours a project should take. You need both to make the numbers work.</p>
+    `,
+  },
+
+  {
+    slug: 'how-to-write-a-freelance-invoice',
+    title: 'How to Write a Freelance Invoice That Gets Paid On Time',
+    excerpt:
+      'Most late payments aren\'t about bad clients — they\'re about invoices that are easy to delay. Here\'s how to write and send invoices that create urgency, build trust, and get paid faster.',
+    publishedAt: '2026-05-23',
+    readingMinutes: 7,
+    category: 'Finance & Invoicing',
+    tags: ['invoice', 'getting paid', 'finance', 'freelancing', 'clients'],
+    metaTitle: 'How to Write a Freelance Invoice (That Gets Paid On Time)',
+    metaDescription:
+      'A complete guide to freelance invoices: what to include, how to structure payment terms, when to send, and how to follow up without damaging client relationships.',
+    content: `
+      <p>A bad invoice is one of the most expensive mistakes a freelancer can make — not because it looks unprofessional, but because it creates the conditions for delayed payment. Late payments cost freelancers thousands of dollars every year in cash flow disruption, and most of them are preventable.</p>
+
+      <p>Here's how to write, send, and follow up on invoices that get paid on time.</p>
+
+      <h2>What Every Freelance Invoice Must Include</h2>
+
+      <p>A complete invoice removes every possible reason a client has to delay — confusion, missing information, or having to ask you something before they can approve it.</p>
+
+      <p>Required fields:</p>
+
+      <ul>
+        <li><strong>Invoice number</strong> — sequential, starting from 001 or a date-based format like INV-2026-001. Makes tracking easier for both sides.</li>
+        <li><strong>Invoice date</strong> — the date you sent it</li>
+        <li><strong>Due date</strong> — explicit. "Net 14" is better than "Net 30" because it cuts your payment cycle in half. Avoid "due upon receipt" — it's vague.</li>
+        <li><strong>Your full contact information</strong> — name, business name, address, email, and payment details</li>
+        <li><strong>Client's full billing information</strong> — their company name, address, and the specific person (accounts payable or your contact)</li>
+        <li><strong>Project description</strong> — a line item per deliverable. Not "Design work" — "Homepage redesign (mobile and desktop), 2 revision rounds"</li>
+        <li><strong>Line item amounts and total</strong> — subtotal, any applicable taxes, and the total due</li>
+        <li><strong>Payment methods</strong> — bank transfer details, PayPal, Stripe link, or whatever you accept. Make it impossible to not know how to pay.</li>
+      </ul>
+
+      <h2>Line Items: Be Specific Without Being Verbose</h2>
+
+      <p>Your line items serve two functions: they document what was delivered, and they make approval easy for the client. A client who receives a clear invoice can approve it without digging through emails to confirm what they asked for.</p>
+
+      <p>Good line item: <em>Freelance content strategy — April 2026 (10 blog briefs, 2 SEO audits, 1 content calendar) — $2,400</em></p>
+
+      <p>Bad line item: <em>Content work — $2,400</em></p>
+
+      <p>For project-based invoices, one or two detailed line items are enough. For retainers, list each deliverable category.</p>
+
+      <h2>Payment Terms That Actually Work</h2>
+
+      <p>Your payment terms are the most important line on the invoice. The default for many freelancers is Net 30 — payment due within 30 days. This is legacy corporate practice that has no place in freelance work.</p>
+
+      <p>Better approaches:</p>
+
+      <ul>
+        <li><strong>Net 14:</strong> Two-week payment window. Standard for most freelance work. Clients can process it within a regular billing cycle without the 30-day lag.</li>
+        <li><strong>Net 7:</strong> One week. Appropriate for small invoices under $500 or with clients you know pay promptly.</li>
+        <li><strong>Due on delivery:</strong> For milestone-based projects, invoice the moment you deliver the milestone and make it due immediately or within 5 days. Appropriate for digital deliverables where the client has instant access.</li>
+      </ul>
+
+      <p>The magic addition: a late payment clause. Include it in your contract and reference it on the invoice: "Invoices unpaid past the due date accrue a 1.5% monthly late fee." You may never enforce it, but it creates urgency. The invoice is no longer optional to ignore.</p>
+
+      <h2>When to Send the Invoice</h2>
+
+      <p>Send the invoice the moment the work is complete and delivered — not at the end of the month, not after you've had time to "wrap everything up," not after the client has had a chance to review and respond.</p>
+
+      <p>Every day you wait after delivery is a free day you've added to their payment timeline. If your terms are Net 14 and you wait five days to invoice, you've effectively given them a Net 19 window without knowing it.</p>
+
+      <p>For ongoing retainers, invoice on the same day each month — ideally before the work begins for the month, not after. Retainers that bill at the end of the month always get paid a month behind. Retainers that bill at the beginning get paid upfront, which is how they should work.</p>
+
+      <h2>The Follow-Up Protocol (Without Damaging the Relationship)</h2>
+
+      <p>Even excellent clients miss invoices. Email gets buried. Billing contacts go on vacation. A good follow-up protocol treats late payment as an administrative issue — not a confrontation.</p>
+
+      <p><strong>Day 1 after due date:</strong> Friendly reminder. Assume it slipped through:</p>
+
+      <blockquote>
+        <p>"Hi [name], just a quick note — invoice #INV-2026-014 for $1,800 was due yesterday. Let me know if you have any questions or need a different payment method. Happy to help get this sorted."</p>
+      </blockquote>
+
+      <p><strong>Day 7:</strong> More direct, still professional:</p>
+
+      <blockquote>
+        <p>"Hi [name], following up on invoice #INV-2026-014 — it's now 7 days past due. Per our agreement, a late fee will apply if unpaid by [date]. Please let me know when to expect payment or if there's an issue I can help resolve."</p>
+      </blockquote>
+
+      <p><strong>Day 14+:</strong> Pause future work, escalate contact if needed. For chronic non-payment, consider a collections service or small claims depending on the amount.</p>
+
+      <h2>Tools That Make Invoicing Easier</h2>
+
+      <ul>
+        <li><strong>Wave:</strong> Free invoicing software. Sends invoices, tracks payment status, and follows up automatically. Best free option.</li>
+        <li><strong>HoneyBook / Dubsado:</strong> Client management platform with invoicing built in. Good for service businesses with recurring clients.</li>
+        <li><strong>Stripe / PayPal:</strong> For clients who prefer card payments. Fees apply (typically 2.9% + $0.30) but they dramatically accelerate payment.</li>
+        <li><strong>Notion:</strong> If you want everything in one workspace, the Freelancer OS includes an invoice tracker with outstanding balance view and follow-up date logging.</li>
+      </ul>
+
+      <h2>The 50% Deposit Changes Everything</h2>
+
+      <p>The best way to avoid invoice problems is to require 50% payment before work begins. The deposit does three things:</p>
+
+      <ol>
+        <li>Filters out clients who aren't serious (they ghost the deposit invoice)</li>
+        <li>Covers your time if the project falls apart mid-stream</li>
+        <li>Creates commitment — a client who has paid you is psychologically invested in seeing the project succeed</li>
+      </ol>
+
+      <p>Clients who push back on deposits are almost always the clients who cause the most problems at the final invoice. The pushback itself is information.</p>
+
+      <p>Require a deposit on every project. Without exception. The clients worth having will understand — and many will be relieved that you have a professional process.</p>
+    `,
+  },
+]
 
 export function getPost(slug: string): BlogPost | undefined {
   return POSTS.find((p) => p.slug === slug)

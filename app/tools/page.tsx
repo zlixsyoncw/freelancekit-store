@@ -1,12 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { DollarSign, ArrowRight } from 'lucide-react'
+import { DollarSign, Calculator, ArrowRight } from 'lucide-react'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Free Freelance Tools',
-  description: 'Free tools for freelancers: rate calculator, invoice estimator, and more. No signup required.',
+  title: 'Free Freelance Tools — Rate Calculator, Project Estimator & More',
+  description: 'Free tools for freelancers: hourly rate calculator, project price estimator, and more. No signup required.',
   alternates: { canonical: `${SITE.url}/tools` },
+  openGraph: {
+    title: 'Free Freelance Tools — FreelanceKit',
+    description: 'Free tools to help freelancers price their work, estimate projects, and build a more profitable practice.',
+    url: `${SITE.url}/tools`,
+  },
 }
 
 const TOOLS = [
@@ -17,6 +22,14 @@ const TOOLS = [
     description: 'Enter your income goal and working hours. Get your minimum, recommended, and premium hourly rates instantly.',
     badge: 'Free',
     color: 'bg-brand-50 text-brand-600',
+  },
+  {
+    href: '/tools/project-estimator',
+    icon: Calculator,
+    name: 'Project Price Estimator',
+    description: 'Select your project scope and hourly rate. Get a quote range, deposit amount, and 3-part payment schedule in seconds.',
+    badge: 'Free',
+    color: 'bg-amber-50 text-amber-600',
   },
 ]
 
@@ -56,15 +69,6 @@ export default function ToolsPage() {
           )
         })}
 
-        {/* Coming soon placeholder */}
-        <div className="bg-sand-50 border border-sand-200 border-dashed rounded-2xl p-7 flex flex-col items-start justify-between">
-          <div>
-            <div className="w-11 h-11 rounded-xl bg-sand-200 mb-5" />
-            <h2 className="font-display font-bold text-sand-400 text-xl mb-2">Project Price Estimator</h2>
-            <p className="text-sand-400 text-sm">Coming soon — estimate fixed-price project quotes from scope descriptions.</p>
-          </div>
-          <span className="mt-5 text-xs font-semibold bg-sand-200 text-sand-500 px-2.5 py-1 rounded-full">Coming soon</span>
-        </div>
       </div>
     </div>
   )
