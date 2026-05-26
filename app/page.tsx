@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Star, Shield, Zap, Users, BookOpen, Clock, DollarSign, Gift, Calculator } from 'lucide-react'
+import { ArrowRight, Star, Shield, Zap, Users, BookOpen, Clock, DollarSign, Gift, Calculator, Mail, Receipt } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
 import EmailCapture from '@/components/EmailCapture'
 import { getFeaturedProducts } from '@/lib/products'
+import { getRecentPosts, formatDate } from '@/lib/blog'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -113,6 +114,7 @@ const FAQ = [
 
 export default function HomePage() {
   const featured = getFeaturedProducts()
+  const recentPosts = getRecentPosts(3)
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -259,7 +261,7 @@ export default function HomePage() {
             <h2 className="font-display text-3xl font-bold text-ink mb-2">Try before you buy</h2>
             <p className="text-sand-500">Free tools that give you a taste of the system — no signup required.</p>
           </div>
-          <div className="grid sm:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <Link
               href="/tools/rate-calculator"
               className="group flex flex-col gap-4 bg-brand-50 border border-brand-200 rounded-2xl p-6 hover:border-brand-400 hover:shadow-md transition-all"
@@ -313,6 +315,65 @@ export default function HomePage() {
                   Get template <ArrowRight className="w-3 h-3" />
                 </span>
               </div>
+            </Link>
+            <Link
+              href="/tools/email-scripts"
+              className="group flex flex-col gap-4 bg-emerald-50 border border-emerald-200 rounded-2xl p-6 hover:border-emerald-400 hover:shadow-md transition-all"
+            >
+              <div className="w-11 h-11 rounded-xl bg-emerald-600 flex items-center justify-center">
+                <Mail className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-display font-bold text-ink text-sm">Email Scripts</h3>
+                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full">Free</span>
+                </div>
+                <p className="text-sand-500 text-xs leading-relaxed mb-3">25 copy-paste email templates for proposals, late payments, scope creep, and more.</p>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 group-hover:gap-2 transition-all">
+                  Browse scripts <ArrowRight className="w-3 h-3" />
+                </span>
+              </div>
+            </Link>
+            <Link
+              href="/tools/invoice-template"
+              className="group flex flex-col gap-4 bg-violet-50 border border-violet-200 rounded-2xl p-6 hover:border-violet-400 hover:shadow-md transition-all"
+            >
+              <div className="w-11 h-11 rounded-xl bg-violet-600 flex items-center justify-center">
+                <Receipt className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-display font-bold text-ink text-sm">Invoice Template</h3>
+                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full">Free</span>
+                </div>
+                <p className="text-sand-500 text-xs leading-relaxed mb-3">Fill in your details and get a formatted invoice you can copy into any email. No account needed.</p>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-violet-600 group-hover:gap-2 transition-all">
+                  Build invoice <ArrowRight className="w-3 h-3" />
+                </span>
+              </div>
+            </Link>
+            <Link
+              href="/tools/contract-clauses"
+              className="group flex flex-col gap-4 bg-blue-50 border border-blue-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-md transition-all"
+            >
+              <div className="w-11 h-11 rounded-xl bg-blue-600 flex items-center justify-center">
+                <BookOpen className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-display font-bold text-ink text-sm">Contract Clauses</h3>
+                  <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full">Free</span>
+                </div>
+                <p className="text-sand-500 text-xs leading-relaxed mb-3">20+ copy-paste clauses for payment, scope, IP, and legal protection — for any freelance contract.</p>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 group-hover:gap-2 transition-all">
+                  Browse clauses <ArrowRight className="w-3 h-3" />
+                </span>
+              </div>
+            </Link>
+          </div>
+          <div className="text-center mt-6">
+            <Link href="/tools" className="text-sm text-brand-600 hover:text-brand-700 font-medium">
+              See all free tools →
             </Link>
           </div>
         </div>
@@ -425,6 +486,55 @@ export default function HomePage() {
           <p className="text-sand-400 text-xs mt-3">
             No spam. Unsubscribe any time. We protect your data.
           </p>
+        </div>
+      </section>
+
+      {/* ── Recent Blog Posts ─────────────────────────────────────────────── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center justify-between mb-10">
+            <div>
+              <h2 className="font-display text-3xl font-bold text-ink mb-1">From the blog</h2>
+              <p className="text-sand-500 text-sm">Practical freelance business guides — new every week.</p>
+            </div>
+            <Link
+              href="/blog"
+              className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-brand-700 transition-colors"
+            >
+              All articles <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6 mb-8">
+            {recentPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group border border-sand-200 rounded-2xl p-6 bg-white hover:border-brand-300 hover:shadow-md transition-all"
+              >
+                <span className="text-xs font-semibold bg-brand-50 text-brand-600 px-2 py-0.5 rounded-full mb-3 inline-block">
+                  {post.category}
+                </span>
+                <h3 className="font-display font-bold text-ink text-base leading-snug mb-2 group-hover:text-brand-700 transition-colors">
+                  {post.title}
+                </h3>
+                <p className="text-sand-500 text-xs leading-relaxed mb-4 line-clamp-2">{post.excerpt}</p>
+                <div className="flex items-center gap-2 text-xs text-sand-400">
+                  <Clock className="w-3 h-3" />
+                  {post.readingMinutes} min
+                  <span>·</span>
+                  {formatDate(post.publishedAt)}
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center sm:hidden">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-brand-700 transition-colors"
+            >
+              All articles <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
         </div>
       </section>
     </>

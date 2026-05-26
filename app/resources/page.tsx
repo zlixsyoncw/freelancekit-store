@@ -211,6 +211,86 @@ const RESOURCES: ResourceSection[] = [
       },
     ],
   },
+  {
+    category: 'Finance, Taxes & Accounting',
+    intro: 'Freelance finances are messier than a regular salary. These tools make tax season survivable and cash flow predictable.',
+    items: [
+      {
+        name: 'Wave',
+        description:
+          'Free accounting, invoicing, and receipt tracking built for small businesses and freelancers. Handles income/expense categorization and basic reporting — no monthly fee.',
+        href: 'https://waveapps.com',
+        badge: 'Free forever',
+        badgeColor: 'bg-emerald-100 text-emerald-700',
+        free: true,
+      },
+      {
+        name: 'QuickBooks Self-Employed',
+        description:
+          'The go-to for freelancers who want automatic mileage tracking, quarterly tax estimates, and Schedule C categorization. Syncs with your bank and exports cleanly for tax filing.',
+        href: 'https://quickbooks.intuit.com/self-employed/',
+        free: false,
+      },
+      {
+        name: 'FreshBooks',
+        description:
+          'Invoicing + accounting designed specifically for service businesses. Better client-facing UX than QuickBooks and excellent time-tracking integration.',
+        href: 'https://freshbooks.com',
+        free: false,
+      },
+      {
+        name: 'FreelanceKit Rate Calculator',
+        description:
+          'Our free tool — enter your income goal, working hours, and vacation weeks. Get your minimum, recommended, and premium hourly rates instantly. No signup.',
+        href: '/tools/rate-calculator',
+        badge: 'Free tool',
+        badgeColor: 'bg-amber-100 text-amber-700',
+        free: true,
+      },
+    ],
+  },
+  {
+    category: 'Legal & Contracts',
+    intro: 'Protect yourself, get paid on time, and avoid scope creep disputes with the right legal tools.',
+    items: [
+      {
+        name: 'DocuSign',
+        description:
+          'The industry-standard e-signature platform. Clients recognize and trust it, which speeds up contract signing. Free tier limited but paid plans reasonable for active freelancers.',
+        href: 'https://docusign.com',
+        badge: 'Free tier',
+        badgeColor: 'bg-emerald-100 text-emerald-700',
+        free: true,
+      },
+      {
+        name: 'HelloSign (Dropbox Sign)',
+        description:
+          'A more affordable DocuSign alternative. Simple template creation, good audit trail, and cleaner UI. Free tier covers 3 signature requests per month.',
+        href: 'https://hellosign.com',
+        badge: 'Free tier',
+        badgeColor: 'bg-emerald-100 text-emerald-700',
+        free: true,
+      },
+      {
+        name: 'FreelanceKit Contract Clauses Library',
+        description:
+          '20+ ready-to-use contract clauses covering payment terms, scope, IP ownership, termination, kill fees, and liability limits. Copy any clause into your contracts.',
+        href: '/tools/contract-clauses',
+        badge: 'Free tool',
+        badgeColor: 'bg-amber-100 text-amber-700',
+        free: true,
+      },
+      {
+        name: 'FreelanceKit Client Onboarding Bundle',
+        description:
+          'Proposal, contract, welcome packet, and kickoff doc built in Notion — a complete legal and onboarding stack for $19 vs. paying $30+/month for contract SaaS.',
+        href: '/shop/client-onboarding-bundle',
+        badge: 'Ours',
+        badgeColor: 'bg-amber-100 text-amber-700',
+        free: false,
+      },
+    ],
+  },
 ]
 
 export default function ResourcesPage() {

@@ -61,6 +61,18 @@ const CATEGORY_CTA: Record<string, { heading: string; body: string; href: string
     href: '/shop/complete-bundle',
     label: 'Get the Complete Bundle — $49',
   },
+  'Tools & Templates': {
+    heading: 'Get the complete Notion freelance system.',
+    body: 'The Freelancer OS is a fully-linked Notion workspace with a client CRM, project hub, invoice tracker, and shareable client portal. One-time $29, no subscription.',
+    href: '/shop/freelancer-os',
+    label: 'Get Freelancer OS — $29',
+  },
+  Marketing: {
+    heading: 'AI prompts for every part of your marketing.',
+    body: 'The FreelanceKit AI Prompt Pack includes 40 prompts for marketing yourself — LinkedIn posts, cold outreach, case study templates, and content ideas. $17 one-time.',
+    href: '/shop/ai-prompt-pack',
+    label: 'Get the AI Prompt Pack — $17',
+  },
 }
 
 interface Props {
@@ -111,6 +123,12 @@ export default function BlogPostPage({ params }: Props) {
   const currentIndex = allSorted.findIndex((p) => p.slug === post.slug)
   const prev = allSorted[currentIndex + 1]
   const next = allSorted[currentIndex - 1]
+
+  // Related posts: same category first, then fill from others, excluding current
+  const related = [
+    ...allSorted.filter((p) => p.slug !== post.slug && p.category === post.category),
+    ...allSorted.filter((p) => p.slug !== post.slug && p.category !== post.category),
+  ].slice(0, 3)
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -202,6 +220,33 @@ export default function BlogPostPage({ params }: Props) {
           </p>
           <EmailCapture source={`blog-${post.slug}`} />
         </div>
+
+        {/* Related posts */}
+        {related.length > 0 && (
+          <div className="mt-12 pt-8 border-t border-sand-200">
+            <h3 className="font-display font-bold text-ink text-lg mb-6">Keep reading</h3>
+            <div className="space-y-4">
+              {related.map((r) => (
+                <Link
+                  key={r.slug}
+                  href={`/blog/${r.slug}`}
+                  className="group flex items-start gap-4 border border-sand-200 rounded-xl p-5 bg-white hover:border-brand-300 hover:shadow-sm transition-all"
+                >
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-xs font-semibold text-brand-600">{r.category}</span>
+                      <span className="text-xs text-sand-400">{r.readingMinutes} min</span>
+                    </div>
+                    <p className="font-display font-bold text-ink text-sm leading-snug group-hover:text-brand-700 transition-colors">
+                      {r.title}
+                    </p>
+                  </div>
+                  <ArrowRight className="w-4 h-4 text-sand-400 group-hover:text-brand-600 flex-shrink-0 mt-1 transition-colors" />
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Prev / Next navigation */}
         {(prev || next) && (

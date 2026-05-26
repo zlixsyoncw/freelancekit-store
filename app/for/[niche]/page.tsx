@@ -1,9 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowRight, CheckCircle2, Star } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Star, Clock } from 'lucide-react'
 import { SITE } from '@/lib/site'
+import { POSTS, formatDate } from '@/lib/blog'
 import EmailCapture from '@/components/EmailCapture'
+
+const FEATURED_POSTS = [
+  'how-to-get-your-first-freelance-client',
+  'freelance-rates-how-to-charge-what-youre-worth',
+  'freelance-client-onboarding',
+  'freelance-scope-creep',
+]
 
 type NicheConfig = {
   title: string
@@ -438,6 +446,216 @@ const NICHES: Record<string, NicheConfig> = {
     },
     keywords: ['notion template social media manager', 'freelance social media management system', 'content calendar notion template'],
   },
+
+  'video-editors': {
+    title: 'Freelance Video Editors',
+    noun: 'video editor',
+    headline: 'Stop Losing Projects in the Drive Folder Chaos',
+    subheadline:
+      'Notion templates for freelance video editors who need to track revisions, manage client approvals, and get paid on time — without rebuilding their system for every project.',
+    pains: [
+      'Revision requests buried in email threads that are 40 messages deep',
+      'Clients who can\'t remember which version they approved or what they already paid for',
+      'Project status impossible to summarize without digging through three folders',
+      'Getting paid late because invoicing is an afterthought until the deadline passes',
+    ],
+    benefits: [
+      {
+        heading: 'Revision log that ends the "which version?" debate',
+        body: 'Track every revision request, approval, and rejection against the project. When a client says "I thought we approved that cut," you have a timestamped log showing exactly what happened.',
+      },
+      {
+        heading: 'Asset and deliverable tracker',
+        body: 'Log every deliverable — rough cut, color grade, final export, subtitle file — with status and delivery date. Send clients a portal link and eliminate the "where is my file?" emails.',
+      },
+      {
+        heading: 'Project profitability view',
+        body: 'Log hours against each project. After 60 days you\'ll see which project types, client types, and deliverable styles are worth your time — and which are eating into your margins.',
+      },
+    ],
+    tools: ['Project hub with revision tracking', 'Client approval workflow', 'Invoice tracker with outstanding/paid view', 'Shareable client delivery portal'],
+    testimonial: {
+      quote:
+        "I used to have no idea which cut a client had approved — it was all in email. Now every project has a revision log in Notion and my client portal shows the current deliverable status. Revision disputes dropped completely.",
+      name: 'Marcus R.',
+      role: 'Freelance video editor, YouTube and branded content',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'Complete Notion workspace with revision tracking, client delivery portal, invoice tracker, and project profitability calculator. Built for creative freelancers.',
+    },
+    keywords: ['notion template freelance video editor', 'video editing client management', 'freelance video editor business system'],
+  },
+
+  'accountants': {
+    title: 'Freelance Accountants',
+    noun: 'accountant',
+    headline: 'Run a Tighter Practice — Without Expensive Practice Management Software',
+    subheadline:
+      'Notion templates for freelance CPAs, bookkeepers, and independent accountants who want a professional client management system without $200/month software fees.',
+    pains: [
+      'Client list scattered across email contacts, spreadsheets, and sticky notes',
+      'No clear record of which clients have paid, which are overdue, and which are in progress',
+      'Deadline-driven work with no calendar or reminder system built for your workflow',
+      'Onboarding new clients that takes hours and still feels disorganized',
+    ],
+    benefits: [
+      {
+        heading: 'Deadline-driven CRM built for tax season',
+        body: 'Track client status, filing deadlines, extension requests, and pending documents in one dashboard. Know exactly who needs attention today without building a new tracking sheet each year.',
+      },
+      {
+        heading: 'Document request tracker per client',
+        body: 'Log every document needed, requested, and received for each client. Send clients a portal link showing outstanding items — eliminates the repeated email asking for the same documents.',
+      },
+      {
+        heading: 'Invoice tracking with retainer and project views',
+        body: 'Manage monthly retainer billing alongside one-time project work. The invoice tracker shows outstanding revenue across all clients in a single view.',
+      },
+    ],
+    tools: ['Client CRM with deadline tracking', 'Document request tracker', 'Invoice tracker with retainer support', 'Client portal for document sharing'],
+    testimonial: {
+      quote:
+        "Tax season used to feel like organized chaos. Now I have a dashboard that shows me which clients have filed, which are waiting on documents, and which invoices are outstanding. I saved 4 hours a week just from having everything in one place.",
+      name: 'David L.',
+      role: 'Freelance CPA, small business focus',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'Client CRM, project tracking, invoice system, and client portal — one Notion workspace for independent accounting practices. One-time $29.',
+    },
+    keywords: ['notion template freelance accountant', 'freelance cpa business system', 'accounting client management notion'],
+  },
+
+  'translators': {
+    title: 'Freelance Translators',
+    noun: 'translator',
+    headline: 'Manage Every Project, Language Pair, and Client in One Place',
+    subheadline:
+      'Notion templates for freelance translators and interpreters who work across multiple clients, language pairs, and delivery formats — without losing track of what\'s due and what\'s been paid.',
+    pains: [
+      'Word count, deadline, and delivery format different for every project — impossible to track in a spreadsheet',
+      'Client rates per word varying by language pair, subject matter, and urgency',
+      'Invoicing delayed because tracking what was delivered takes longer than delivering it',
+      'No system for repeat clients — starting from scratch every time',
+    ],
+    benefits: [
+      {
+        heading: 'Project database with word count and language pair',
+        body: 'Every project logs source language, target language, word count, subject matter, and rate per word. Quote calculations take 30 seconds instead of 10 minutes.',
+      },
+      {
+        heading: 'Per-client rate card in your CRM',
+        body: 'Store each client\'s agreed rates by language pair and content type. Never second-guess what you quoted — pull it from the record.',
+      },
+      {
+        heading: 'Revenue tracking that accounts for variable project size',
+        body: 'Unlike hourly work, translation revenue varies per project. The invoice tracker calculates monthly and year-to-date revenue automatically so you always know where you stand.',
+      },
+    ],
+    tools: ['Project database with language pair tracking', 'Per-client rate card CRM', 'Invoice tracker with monthly revenue dashboard', 'Deadline and delivery calendar'],
+    testimonial: {
+      quote:
+        "I translate for 8 regular clients across 4 language pairs. Before Notion, I was managing everything in spreadsheets that were always out of date. Now I have one dashboard that tells me what\'s due, what\'s paid, and which clients need follow-up.",
+      name: 'Sophie V.',
+      role: 'Freelance translator, EN/FR/ES',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'Notion workspace with project database, client CRM, invoice tracker, and delivery portal. Configurable for any project type — including per-word billing.',
+    },
+    keywords: ['notion template freelance translator', 'freelance translation client management', 'translator business system notion'],
+  },
+
+  'ux-researchers': {
+    title: 'Freelance UX Researchers',
+    noun: 'UX researcher',
+    headline: 'Run Every Study, Client, and Report From One Workspace',
+    subheadline:
+      'Notion templates for freelance UX researchers who manage multiple studies, recruit participants, synthesize insights, and deliver reports — without losing track of any piece of the project.',
+    pains: [
+      'Participant data scattered across Google Forms, spreadsheets, and email threads',
+      'No central place to link study notes, recordings, and final insights per project',
+      'Clients asking for status updates while you\'re in the middle of synthesis',
+      'Invoicing delayed because tracking time across async research phases is chaotic',
+    ],
+    benefits: [
+      {
+        heading: 'Study tracker with participant and session log',
+        body: 'Each research project gets a hub: study design, participant list, session schedule, notes, and recordings — all linked. Know the status of every session without hunting through email.',
+      },
+      {
+        heading: 'Insights and findings database',
+        body: 'Log observations and findings tagged by theme and study. When a client wants to know if a finding from six months ago still holds, you can pull it in 30 seconds rather than re-reading a full report.',
+      },
+      {
+        heading: 'Client portal that keeps stakeholders off your back',
+        body: 'Share a live Notion page showing study progress, upcoming milestones, and what\'s been delivered. Clients see current status without interrupting your synthesis work.',
+      },
+    ],
+    tools: ['Research project hub with participant tracking', 'Insights database by theme and study', 'Client portal with study progress', 'Invoice tracker with time-per-study log'],
+    testimonial: {
+      quote:
+        "My old process was a Notion folder graveyard — notes everywhere, no system. Now every study has its own linked hub: participants, sessions, key findings, deliverables. It makes the synthesis phase 40% faster because I can actually navigate my own work.",
+      name: 'Priya M.',
+      role: 'Freelance UX researcher, enterprise and startup clients',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'A complete Notion workspace for research freelancers: project hub, client CRM, invoice tracker, and shareable client portal. One-time $29.',
+    },
+    keywords: ['notion template ux researcher', 'freelance ux research client management', 'ux researcher business system'],
+  },
+
+  'project-managers': {
+    title: 'Freelance Project Managers',
+    noun: 'project manager',
+    headline: 'One Dashboard for Every Client, Engagement, and Deliverable',
+    subheadline:
+      'Notion templates for freelance and fractional project managers who juggle multiple client engagements, stakeholders, and delivery timelines — without the overhead of enterprise PM software.',
+    pains: [
+      'Context-switching between five different client tools every morning',
+      'No single view showing which projects are on track, at risk, or blocked across all clients',
+      'Tracking time across clients for billing when every engagement has different rates and structures',
+      'Client status emails that take 30 minutes to write when the answer should take 5',
+    ],
+    benefits: [
+      {
+        heading: 'Cross-client engagement dashboard',
+        body: 'See every active client engagement in one view: status, next milestone, key risks, and outstanding decisions. Start your day knowing where attention is needed — without opening eight different tools.',
+      },
+      {
+        heading: 'Risk and decision tracker per engagement',
+        body: 'Log risks, blockers, and decisions with owner and due date linked to each project. When a client asks "where did we land on that decision?" you have a record — not a memory.',
+      },
+      {
+        heading: 'Time tracking with client rate support',
+        body: 'Log hours per client with different rates per engagement. The invoice tracker generates accurate invoices even when you\'re billing three clients at different rates for different project types.',
+      },
+    ],
+    tools: ['Cross-client engagement dashboard', 'Risk and decision tracker', 'Time log with per-client rate support', 'Stakeholder update portal per client'],
+    testimonial: {
+      quote:
+        "I was managing 4 fractional engagements from 4 different client tools. Every Monday was a 2-hour context rebuild. Now I have one Notion dashboard that shows me all clients, statuses, and blockers. My Monday starts in 15 minutes.",
+      name: 'Lisa K.',
+      role: 'Freelance project manager, fintech and e-commerce',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'Complete Notion workspace for multi-client PMs: cross-client dashboard, decision log, time tracking, and invoice tracker. One-time $29.',
+    },
+    keywords: ['notion template freelance project manager', 'fractional project manager tools', 'freelance pm client management system'],
+  },
 }
 
 export function generateStaticParams() {
@@ -587,6 +805,39 @@ export default function NichePage({ params }: { params: { niche: string } }) {
         </p>
         <EmailCapture source={`niche-${params.niche}`} buttonText="Subscribe free" />
       </div>
+
+      {/* Related blog posts */}
+      {(() => {
+        const posts = FEATURED_POSTS.map((slug) => POSTS.find((p) => p.slug === slug)).filter(Boolean)
+        return posts.length > 0 ? (
+          <div className="mt-12 pt-10 border-t border-sand-100">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="font-display font-bold text-xl text-ink">From the blog</h3>
+              <Link href="/blog" className="text-sm text-brand-600 hover:text-brand-700 font-medium">
+                All articles →
+              </Link>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {posts.map((post) => post && (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group p-4 rounded-xl border border-sand-200 hover:border-brand-200 bg-white hover:shadow-sm transition-all"
+                >
+                  <span className="inline-block text-xs font-semibold bg-brand-50 text-brand-600 px-2 py-0.5 rounded-full mb-2">{post.category}</span>
+                  <h4 className="font-display font-bold text-ink text-sm leading-snug mb-2 group-hover:text-brand-600 transition-colors">{post.title}</h4>
+                  <div className="flex items-center gap-1.5 text-xs text-sand-400">
+                    <Clock className="w-3 h-3" />
+                    {post.readingMinutes} min read
+                    <span>·</span>
+                    {formatDate(post.publishedAt)}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : null
+      })()}
 
       {/* Browse more niches */}
       <div className="mt-12 pt-8 border-t border-sand-100">

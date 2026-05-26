@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import ProductCard from '@/components/ProductCard'
 import { PRODUCTS } from '@/lib/products'
 import { SITE } from '@/lib/site'
+import { Gift, Shield } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Shop — Notion Templates & AI Prompts for Freelancers',
@@ -29,8 +30,9 @@ export default function ShopPage() {
       {/* Bundles */}
       {bundles.length > 0 && (
         <section className="mb-16">
-          <h2 className="font-display text-2xl font-bold text-ink mb-6">
-            🎁 Bundles — Best Value
+          <h2 className="font-display text-2xl font-bold text-ink mb-6 flex items-center gap-2">
+            <Gift className="w-6 h-6 text-amber-500" />
+            Bundles — Best Value
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {bundles.map((product) => (
@@ -54,7 +56,9 @@ export default function ShopPage() {
 
       {/* Guarantee note */}
       <div className="mt-16 bg-emerald-50 border border-emerald-200 rounded-2xl p-8 text-center">
-        <div className="text-3xl mb-3">🛡️</div>
+        <div className="flex justify-center mb-3">
+          <Shield className="w-10 h-10 text-emerald-500" />
+        </div>
         <h3 className="font-display font-bold text-ink text-xl mb-2">
           30-Day Money-Back Guarantee
         </h3>
