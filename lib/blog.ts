@@ -4747,6 +4747,312 @@ export const POSTS: BlogPost[] = [
       <p>Once you have clients, the <a href="/shop/freelancer-os">Freelancer OS</a> helps you turn them into repeat business: track the relationship, follow up at the right moment, and ask for referrals when the project is at its highest point.</p>
     `,
   },
+
+  {
+    slug: 'freelance-client-discovery-questionnaire-template',
+    title: 'Freelance Client Discovery Questionnaire: 25 Questions + Template',
+    metaDescription:
+      'A complete discovery questionnaire template for freelancers — 25 questions organized by goal type, with a breakdown of why each question matters and how to use the answers to write better proposals.',
+    publishedAt: '2026-05-05',
+    category: 'Client Management',
+    tags: ['client management', 'proposals', 'onboarding', 'templates'],
+    readingMinutes: 9,
+    excerpt:
+      'The discovery call is the most important meeting in any freelance engagement. The questions you ask determine the quality of your proposal, your pricing accuracy, and whether the project will run smoothly. Here are 25 questions that work — plus a free template.',
+    content: `
+      <p>The discovery call is the most important meeting in any freelance engagement. The questions you ask determine the quality of your proposal, your pricing accuracy, and whether the project will run smoothly.</p>
+
+      <p>Most freelancers wing it. They ask a few surface-level questions, write a proposal from instinct, and wonder why projects go sideways. The fix is a structured discovery questionnaire — a set of questions you ask every prospective client, in a consistent order, so nothing important gets missed.</p>
+
+      <p>Below are 25 questions organized by category, plus a breakdown of what each question is actually designed to uncover.</p>
+
+      <h2>How to Use This Template</h2>
+
+      <p>Don't ask all 25 questions in every call. Use this as a bank — pick 10–15 most relevant to the project type, and let the conversation flow naturally. The goal is to understand the client's situation clearly enough to write a proposal that wins the project and sets accurate expectations.</p>
+
+      <p>The <a href="/shop/client-onboarding-bundle">Client Onboarding Bundle</a> includes a duplicate-ready Notion version of this questionnaire with answer fields and a proposal-writing section linked to each response.</p>
+
+      <h2>Section 1: Understanding the Project (Questions 1–7)</h2>
+
+      <p>These questions establish the basic scope and prevent the most common mistake: proposing before you understand what's actually being asked for.</p>
+
+      <h3>1. What problem are we solving with this project?</h3>
+      <p>This is the most important question. The answer reveals whether the client has a clear problem statement or is chasing a solution they've invented. A client who says "we want a new website" is harder to work with than one who says "our current site doesn't convert visitors into leads — we need to change that." Start here.</p>
+
+      <h3>2. What does success look like at the end of this engagement?</h3>
+      <p>Forces the client to define outcomes, not just deliverables. If they struggle to answer, the project isn't ready to proceed — that's important information to have before you write a proposal.</p>
+
+      <h3>3. What have you already tried? What worked, what didn't?</h3>
+      <p>Saves you from proposing something they've already done. Also surfaces constraints ("we tried an agency and it was a disaster") that affect how you should position your approach.</p>
+
+      <h3>4. Who is the primary audience or user for this project?</h3>
+      <p>Every project serves someone. Knowing who keeps you from building the wrong thing. A landing page for 55-year-old CFOs is built differently from one for 25-year-old startup founders.</p>
+
+      <h3>5. What are the three most important features or deliverables?</h3>
+      <p>Forces prioritization. If the client says everything is equally important, you'll have scope creep. If they can name three things, you can build a proposal around those and use them as the scope anchor.</p>
+
+      <h3>6. What's the biggest risk if this project fails or takes longer than expected?</h3>
+      <p>Reveals urgency and business impact. A client who says "we're launching a product in 60 days and this needs to be done" is telling you they'll pay a premium to hit the deadline. A client who says "no big risk, we're just exploring" is telling you timeline pressure won't move them.</p>
+
+      <h3>7. Are there any existing assets, systems, or constraints I should know about?</h3>
+      <p>Surfaces technical debt, brand constraints, existing software that must be integrated, or organizational politics that will affect the project. Better to find out now than in week three.</p>
+
+      <h2>Section 2: Timeline and Budget (Questions 8–13)</h2>
+
+      <p>The questions most freelancers are afraid to ask — but the ones that matter most for writing a proposal you can actually deliver.</p>
+
+      <h3>8. Do you have a target launch or completion date?</h3>
+      <p>Not "do you need this done fast" — a specific date. A client who says "end of Q2" is telling you something concrete. A client who says "as soon as possible" may not have a real deadline at all.</p>
+
+      <h3>9. What's driving that timeline?</h3>
+      <p>Follows up the previous question to understand whether the deadline is fixed (board meeting, product launch, contract requirement) or soft (it just feels important). Fixed deadlines justify expedited pricing. Soft deadlines are more flexible.</p>
+
+      <h3>10. Have you worked with a freelancer or agency on something like this before? How did it go?</h3>
+      <p>Surfaces past trauma. If the client had a bad experience with their last agency, they'll tell you — and their answer reveals exactly what went wrong and what they need you to do differently. This also tells you whether they understand how freelance engagements work.</p>
+
+      <h3>11. What's your ballpark budget for this project?</h3>
+      <p>Ask this directly. Clients who have a budget will tell you. Clients who don't know will give you a range. Either way, the answer helps you right-size your proposal. A client with $3,000 to spend gets a different proposal than one with $30,000.</p>
+
+      <h3>12. How is budget approval handled on your end?</h3>
+      <p>Tells you whether you're talking to the decision-maker or someone who needs to get sign-off from above. If there's an approval process, build extra time into the proposal timeline — contracts take longer to sign than expected when a VP needs to review them.</p>
+
+      <h3>13. Are you talking to other freelancers or agencies right now?</h3>
+      <p>Honest clients will tell you yes. This isn't a disqualifier — it's information. If you're competing, you need to differentiate your proposal clearly. If you're the only option, you have more leverage on pricing and timeline.</p>
+
+      <h2>Section 3: Working Style and Process (Questions 14–19)</h2>
+
+      <p>These questions predict whether the working relationship will be smooth or painful — and they're the most commonly skipped by freelancers who regret it later.</p>
+
+      <h3>14. Who will I be working with day-to-day?</h3>
+      <p>Get the name and role of your primary point of contact. If it's someone different from the person on this call, ask for an introduction. Working through a gatekeeper adds latency to every feedback loop.</p>
+
+      <h3>15. How does your team typically prefer to communicate?</h3>
+      <p>Slack, email, weekly calls, or "just text me" — knowing their preference prevents friction. If you work async-first and they expect daily calls, that's a mismatch to surface now.</p>
+
+      <h3>16. How often do you want status updates?</h3>
+      <p>Sets expectations for your communication cadence. Some clients want weekly check-ins; others want to hear from you only when there's something to review. Building this into your proposal prevents "we never heard from you" complaints.</p>
+
+      <h3>17. How many rounds of revisions do you typically expect?</h3>
+      <p>This question gives you a baseline for scoping revision rounds into your proposal. If a client says "usually two or three rounds" and your proposal only allows one, you'll be negotiating scope before the project is done.</p>
+
+      <h3>18. Who has final approval authority on deliverables?</h3>
+      <p>Critical for creative work. If the CEO needs to approve the final design but you've been working with the marketing coordinator, make sure the CEO is involved early — not at the final-approval stage when they want to restart from scratch.</p>
+
+      <h3>19. What does a bad working relationship look like to you?</h3>
+      <p>An unusual question — and the most revealing one on this list. Clients who have been burned by bad freelancers will tell you exactly what went wrong. Their answer tells you exactly what not to do.</p>
+
+      <h2>Section 4: Business Context (Questions 20–25)</h2>
+
+      <p>These questions help you understand where the client's organization is, what pressures they're under, and how to position your work as strategic rather than tactical.</p>
+
+      <h3>20. Can you tell me about your business and what you're trying to achieve this year?</h3>
+      <p>Opens the conversation to strategic context. The best freelancers understand their clients' business goals — not just the project spec. When you can connect your work to a revenue target or growth initiative, you become a strategic partner, not a contractor.</p>
+
+      <h3>21. What's your biggest business challenge right now, independent of this project?</h3>
+      <p>This often surfaces additional needs or priorities. A client who says "we're struggling to retain customers" may need more than a new landing page — and knowing that context helps you propose the right scope.</p>
+
+      <h3>22. Who is your ideal customer and what problem do you solve for them?</h3>
+      <p>Essential for brand, marketing, and content work. If you're writing copy for a client who can't describe their own customer, you're in for a difficult feedback process. This question reveals how well they know their market.</p>
+
+      <h3>23. How does this project fit into your larger strategy?</h3>
+      <p>Is this a standalone project or part of something larger? A client doing a one-off campaign has different needs from one building a long-term channel. Understanding the context helps you scope the work correctly and identify upsell opportunities.</p>
+
+      <h3>24. Is there anything I should know about internal dynamics that might affect this project?</h3>
+      <p>A subtle way to ask about office politics. Clients who want to warn you will — they'll mention the stakeholder who always changes direction, the executive who needs to approve everything, or the team that will push back on change. Invaluable information to have before you propose.</p>
+
+      <h3>25. What would make this engagement a 10/10 experience from your perspective?</h3>
+      <p>Ends the call on a forward-looking note and forces the client to articulate what exceptional looks like to them. You'll get answers like "clear communication," "hitting the deadline," or "feeling like we're partners." Whatever they say becomes your north star for the engagement.</p>
+
+      <h2>After the Call: Turning Answers Into a Proposal</h2>
+
+      <p>Discovery notes are only useful if you actually reference them when writing the proposal. A few practices that help:</p>
+
+      <ul>
+        <li>Write a one-paragraph "situation summary" at the top of your proposal notes — summarize the client's problem, their goal, and the main constraints. Writing this forces you to check your own understanding.</li>
+        <li>Mirror the client's language. If they called the project a "brand refresh," use that phrase — not "visual identity redesign." Small language alignment signals you were listening.</li>
+        <li>Reference their success metrics. If the client said "we want to increase trial signups by 20%," your proposal should mention how your deliverable connects to that goal.</li>
+        <li>Call out the constraints you heard. If they mentioned a fixed deadline, budget limit, or technical requirement, acknowledge it in the proposal. It shows you were paying attention.</li>
+      </ul>
+
+      <p>A proposal built from good discovery questions closes faster, requires fewer revisions, and generates fewer mid-project surprises. The 30 minutes you spend on a structured discovery call is the highest-ROI time in any new client engagement.</p>
+
+      <p>The <a href="/shop/client-onboarding-bundle">Client Onboarding Bundle</a> includes a duplicate-ready Notion version of this questionnaire with answer fields, a proposal-writing section, and a kickoff meeting agenda — so every new client relationship starts with the same professional process.</p>
+    `,
+  },
+
+  {
+    slug: 'how-to-write-a-freelance-cold-email-that-gets-replies',
+    title: 'How to Write a Freelance Cold Email That Actually Gets Replies',
+    metaDescription:
+      'A practical guide to writing cold emails that get responses from potential clients — including subject line formulas, opening line strategies, pitch frameworks, and 5 real cold email templates you can use today.',
+    publishedAt: '2026-05-12',
+    category: 'Getting Clients',
+    tags: ['client acquisition', 'email', 'marketing', 'sales'],
+    readingMinutes: 10,
+    excerpt:
+      'Most freelance cold emails fail for the same three reasons. Here\'s a step-by-step framework for writing cold emails that get replies — including subject lines, opening formulas, pitch structures, and five templates you can use today.',
+    content: `
+      <p>Most freelance cold emails fail for the same three reasons: they're too long, they're about you instead of the recipient, and they ask for too much upfront. The good news is that all three problems are fixable — and fixing them can turn a 0% reply rate into 10–20%.</p>
+
+      <p>This guide covers everything from subject line to call to action, including five templates you can adapt immediately.</p>
+
+      <h2>The Core Principle: Make It About Them</h2>
+
+      <p>Every freelancer writes cold emails about themselves. "I'm a UX designer with 5 years of experience and I specialize in SaaS products..." Nobody cares. The recipient doesn't know you and has no reason to keep reading.</p>
+
+      <p>The cold emails that get replies are about the recipient. They reference something specific about the person's business, notice a problem or opportunity, and position the offer as a solution to something the recipient actually cares about.</p>
+
+      <p>Before you write a single word, answer this question: <em>Why is this specific person a good fit for what I do?</em> If you don't have a specific answer, you're not ready to send the email.</p>
+
+      <h2>Subject Lines That Get Opens</h2>
+
+      <p>Your subject line has one job: get the email opened. It doesn't need to sell anything. The best cold email subject lines are short (under 7 words), specific to the recipient, and mildly curiosity-inducing without being clickbait.</p>
+
+      <p>Formulas that work:</p>
+
+      <ul>
+        <li><strong>Reference something they published:</strong> "Your post on [topic]" or "Read your piece on [X]"</li>
+        <li><strong>Name the problem you noticed:</strong> "Question about your onboarding flow" or "Noticed something on [their site]"</li>
+        <li><strong>Direct and clear:</strong> "Freelance [your specialty] — available for [month]"</li>
+        <li><strong>Mutual connection:</strong> "[Name] suggested I reach out" (only use this if it's true)</li>
+        <li><strong>The result:</strong> "Helped [similar company] get [result] — think it could work for you"</li>
+      </ul>
+
+      <p>Subject lines that don't work: "Partnership opportunity," "Following up," "Quick question," and anything that sounds like a newsletter or automated sequence. These go straight to archive.</p>
+
+      <h2>The Opening Line: Earn the Next Sentence</h2>
+
+      <p>The opening line of a cold email must earn the next sentence. If the first sentence is generic, the reader stops. The best opening lines show that you did your research and are talking specifically to this person — not blasting a template to 500 contacts.</p>
+
+      <p>Opening line formulas:</p>
+
+      <ul>
+        <li><strong>Reference their content:</strong> "Saw your post on [LinkedIn/their blog] about [topic] — [one specific observation about it]."</li>
+        <li><strong>Reference a company milestone:</strong> "Congrats on the Series A — looks like you're scaling the product team fast."</li>
+        <li><strong>Reference something specific on their site:</strong> "Was looking at [their site] and noticed [specific observation about their product, design, copy, or content]."</li>
+        <li><strong>Reference a problem you solved for a similar company:</strong> "I just finished a project for [similar company] helping them [result]. When I saw your [product/site/content], I thought there might be a similar opportunity."</li>
+      </ul>
+
+      <p>The goal is to communicate, in one sentence, that you are a real person who spent ten minutes learning about their specific situation before reaching out.</p>
+
+      <h2>The Pitch: Lead With Value, Not Your CV</h2>
+
+      <p>After the opening line, most freelancers make a fatal mistake: they start listing their credentials. "I've been doing this for eight years. I've worked with companies like X, Y, and Z. I specialize in..."</p>
+
+      <p>Nobody responds to this because it still doesn't answer the question the recipient is asking: <em>What's in this for me?</em></p>
+
+      <p>Structure your pitch around this sequence:</p>
+
+      <ol>
+        <li><strong>The problem or opportunity you noticed</strong> — specific to them, not generic</li>
+        <li><strong>The outcome you help clients achieve</strong> — results-focused, not process-focused</li>
+        <li><strong>One piece of social proof</strong> — a result, a recognizable client name, or a before/after</li>
+        <li><strong>Why you're reaching out to them specifically</strong> — what makes them a good fit</li>
+      </ol>
+
+      <p>Total pitch length: 2–4 sentences. If it's longer, cut it.</p>
+
+      <h2>The Call to Action: Ask for a Small Yes</h2>
+
+      <p>The biggest cold email mistake: asking for too much in the first email. "Are you available for a 30-minute call to discuss how we might work together?" This asks a stranger to commit 30 minutes to someone they've never heard of. The conversion rate on this CTA is near zero.</p>
+
+      <p>Instead, ask for a small, low-friction yes:</p>
+
+      <ul>
+        <li>"Would it be worth a 10-minute call to see if this is relevant?"</li>
+        <li>"Is this something you're actively thinking about right now?"</li>
+        <li>"Would it make sense to send over a few ideas?"</li>
+        <li>"Happy to share the case study if it would be useful — just say the word."</li>
+      </ul>
+
+      <p>A small yes leads to a bigger yes. Getting a response — even "not right now" — opens a door that a non-response closes permanently.</p>
+
+      <h2>5 Cold Email Templates</h2>
+
+      <p>Use these as starting points. Customize every template to the specific recipient — especially the opening line and the specific problem or opportunity you reference.</p>
+
+      <h3>Template 1: The Specific Observation</h3>
+      <p><em>Best for: design, copywriting, marketing, and other work where you can observe their output directly.</em></p>
+      <blockquote>
+        <p>Subject: Something I noticed on [their site/app]</p>
+        <p>Hi [Name],</p>
+        <p>Was looking at [specific page or feature] on [their site] and noticed [specific observation — a UX issue, a copy opportunity, a design inconsistency, a gap in their content strategy].</p>
+        <p>I help [type of company] with [your specialty]. Recently [result you achieved for a similar company].</p>
+        <p>Worth a quick call to see if it's a fit? I have 10 minutes Thursday or Friday if either works.</p>
+        <p>[Name]</p>
+      </blockquote>
+
+      <h3>Template 2: The Content Reference</h3>
+      <p><em>Best for: reaching out to founders, content creators, and thought leaders who publish frequently.</em></p>
+      <blockquote>
+        <p>Subject: Your [post/article/talk] on [topic]</p>
+        <p>Hi [Name],</p>
+        <p>Read your piece on [topic] — the point about [specific idea from their content] stuck with me. [One genuine observation about why it resonated or what it made you think about.]</p>
+        <p>I work with [your niche] helping them [your value proposition]. Given what you wrote about [topic], I thought there might be an interesting conversation here.</p>
+        <p>Would it make sense to connect for 15 minutes?</p>
+        <p>[Name]</p>
+      </blockquote>
+
+      <h3>Template 3: The Direct Pitch</h3>
+      <p><em>Best for: companies you've researched deeply and where you have a specific, tangible offer.</em></p>
+      <blockquote>
+        <p>Subject: Freelance [your role] — [your niche focus]</p>
+        <p>Hi [Name],</p>
+        <p>I specialize in [your specialty] for [your niche]. [One sentence result you've achieved for a similar company].</p>
+        <p>Saw [company name] is [something they're doing — scaling, launching something, hiring, expanding]. Thought it might be worth reaching out while [relevant context — you're between engagements, you just wrapped a similar project, you have availability starting X].</p>
+        <p>Happy to send over a few thoughts on [their specific situation] if that would be useful. No commitment.</p>
+        <p>[Name]</p>
+      </blockquote>
+
+      <h3>Template 4: The Warm Intro Follow-Up</h3>
+      <p><em>Best for: following up after a mutual connection made an introduction, or after meeting at an event.</em></p>
+      <blockquote>
+        <p>Subject: Following up — [mutual connection] suggested I reach out</p>
+        <p>Hi [Name],</p>
+        <p>[Mutual connection] mentioned you're working on [project or challenge] and suggested I reach out — I help [type of company] with [exactly what they need].</p>
+        <p>[One sentence about a result you achieved for a similar situation.]</p>
+        <p>Worth 15 minutes this week to see if there's a fit?</p>
+        <p>[Name]</p>
+      </blockquote>
+
+      <h3>Template 5: The Re-Engage</h3>
+      <p><em>Best for: reaching out to past leads who went quiet, or former clients you haven't worked with in 6+ months.</em></p>
+      <blockquote>
+        <p>Subject: Checking in — [relevant context]</p>
+        <p>Hi [Name],</p>
+        <p>We spoke [timeframe] ago about [project or challenge]. You mentioned [specific thing they said]. I've since [something relevant — wrapped a similar project, developed a new process, worked with a company in their space].</p>
+        <p>Wondering if [their challenge] is still something you're working on. Happy to reconnect if the timing is better now.</p>
+        <p>[Name]</p>
+      </blockquote>
+
+      <h2>The Follow-Up Sequence</h2>
+
+      <p>Most responses come from follow-ups, not the first email. A three-email sequence is standard — but each follow-up must add value rather than just asking "did you see my last email?"</p>
+
+      <ul>
+        <li><strong>Follow-up 1 (Day 4–5):</strong> Add a piece of relevant value — a case study, a relevant article, a specific observation about something that changed in their industry.</li>
+        <li><strong>Follow-up 2 (Day 10–12):</strong> The honest close — "I know you're busy. If this isn't relevant right now, totally understand — just say the word and I'll leave you alone. If timing changes, feel free to reach back out."</li>
+      </ul>
+
+      <p>After three emails with no response, stop. Sending more than three emails to someone who hasn't responded turns outreach into harassment. Move on and come back in 3–6 months with a fresh angle.</p>
+
+      <h2>The Volume Question</h2>
+
+      <p>Cold email is a numbers game — but the numbers are smaller than most people think. A carefully researched, personalized 20-email list will outperform a templated 200-email blast. The goal is quality replies, not volume.</p>
+
+      <p>If you're sending 50+ identical emails per week, you're doing mass outreach — and getting mass-outreach reply rates (under 2%). If you spend 20 minutes researching each recipient and personalizing each email, a 10–15% reply rate is achievable.</p>
+
+      <p>Most freelancers who complain that cold email "doesn't work" are sending generic emails at high volume and measuring success by send count instead of reply rate. Switch the metric.</p>
+
+      <h2>Tracking and Follow-Through</h2>
+
+      <p>A cold email campaign that isn't tracked is wasted effort. At minimum, log who you emailed, when, whether they responded, and what happened next. This is exactly what the CRM in the <a href="/shop/freelancer-os">Freelancer OS</a> is built for — every prospect gets a record with follow-up dates, so warm leads don't go cold while you're busy with active client work.</p>
+
+      <p>The best time to send cold emails is Tuesday–Thursday, between 8am and 10am in the recipient's time zone. Monday mornings are crowded. Friday afternoons are dead. Midweek mornings get opened.</p>
+
+      <p>Cold email works. Most freelancers just don't do it long enough or well enough to see results. If you send 20 good emails per week for eight weeks, at a 10% reply rate, that's 16 conversations. You need one or two to convert to meaningful project.</p>
+    `,
+  },
 ]
 
 export function getPost(slug: string): BlogPost | undefined {

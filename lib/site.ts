@@ -32,6 +32,7 @@ export const SITE = {
       { label: 'Resources', href: '/resources' },
       { label: 'Affiliate Program', href: '/affiliate' },
       { label: 'Blog', href: '/blog' },
+      { label: 'Wall of Love', href: '/wall-of-love' },
     ],
     Legal: [
       { label: 'Privacy Policy', href: '/privacy' },

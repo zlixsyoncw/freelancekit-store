@@ -656,6 +656,132 @@ const NICHES: Record<string, NicheConfig> = {
     },
     keywords: ['notion template freelance project manager', 'fractional project manager tools', 'freelance pm client management system'],
   },
+
+  'bookkeepers': {
+    title: 'Freelance Bookkeepers',
+    noun: 'bookkeeper',
+    headline: 'Run a Full-Service Bookkeeping Practice Without the $300/Month Software Bill',
+    subheadline:
+      'Notion templates for freelance bookkeepers and independent financial professionals who want a clean client management system without paying for enterprise practice management software.',
+    pains: [
+      'Client list scattered across email, spreadsheets, and a dozen browser tabs every Monday',
+      'No reliable system for tracking monthly close checklists per client',
+      'Invoicing delayed until the last minute because billing is the last thing you feel like doing',
+      'New clients onboarded differently each time — inconsistent process looks unprofessional',
+    ],
+    benefits: [
+      {
+        heading: 'Monthly close checklist per client',
+        body: 'Build a reusable checklist template — categorize transactions, reconcile accounts, run reports, review for anomalies — and duplicate it for every client, every month. Never miss a step.',
+      },
+      {
+        heading: 'Deadline dashboard that shows who needs attention this week',
+        body: "A single view across all clients: who has a filing deadline, whose books are behind, and who hasn't sent source documents yet. Know exactly where to focus every Monday morning.",
+      },
+      {
+        heading: 'Document request tracker that eliminates repeated follow-ups',
+        body: 'Log every document needed per client — bank statements, receipts, payroll records — with request status and date. Send clients a portal link showing exactly what you still need.',
+      },
+    ],
+    tools: ['Client CRM with deadline tracking', 'Monthly close checklist template', 'Document request tracker', 'Invoice tracker with retainer billing'],
+    testimonial: {
+      quote:
+        'I used to rebuild my monthly close checklist in a Google Doc for each client. Now I have one template in Notion that I duplicate in 30 seconds, link to the client record, and mark off as I go. Cut my admin time in half and nothing falls through the cracks.',
+      name: 'Rachel M.',
+      role: 'Freelance bookkeeper, 12 small business clients',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'Notion workspace with deadline-driven CRM, monthly checklist templates, document tracker, and invoice system. Built for service-based freelancers who run recurring client engagements.',
+    },
+    keywords: ['notion template freelance bookkeeper', 'bookkeeping client management system', 'freelance bookkeeper business tools'],
+  },
+
+  'seo-consultants': {
+    title: 'Freelance SEO Consultants',
+    noun: 'SEO consultant',
+    headline: 'Deliver Better SEO Results — and Make Sure Clients Actually See Them',
+    subheadline:
+      'Notion templates for freelance SEO consultants and independent digital strategists who manage keyword research, technical audits, link building, and monthly reporting across multiple client accounts.',
+    pains: [
+      'Monthly SEO reports that take three hours to build and get ignored anyway',
+      'Keyword research and audit findings scattered across Google Docs with no clear status',
+      'Clients who ask "is any of this working?" because there\'s no clear progress view',
+      'Juggling retainer scope, one-time projects, and sprint work without losing track of hours',
+    ],
+    benefits: [
+      {
+        heading: 'Per-client SEO project tracker',
+        body: 'Track every initiative — technical fixes, content briefs, link targets, on-page changes — with status, assigned quarter, and expected impact. Know what\'s shipped, in progress, and backlogged across every account.',
+      },
+      {
+        heading: 'Keyword database linked to content calendar',
+        body: 'Store your target keywords with volume, difficulty, current ranking, and linked content. See at a glance which pages need briefs, which are ranking and worth strengthening, and which are being ignored.',
+      },
+      {
+        heading: 'Monthly report template that practically writes itself',
+        body: 'A structured report template — ranking movement, traffic changes, tasks completed, tasks planned — fills in faster when your data is already organized. Send polished reports in 45 minutes instead of half a day.',
+      },
+    ],
+    tools: ['Client CRM with retainer scope tracking', 'Keyword database with ranking status', 'Per-client project and task tracker', 'Monthly SEO report template'],
+    testimonial: {
+      quote:
+        'My clients used to ask "what did we actually do this month?" because I had no central record. Now I keep a running task log in the client hub and use the report template to pull it together. Clients renew more often because they can see the work.',
+      name: 'Daniel K.',
+      role: 'Freelance SEO consultant, B2B SaaS focus',
+    },
+    primaryProduct: {
+      name: 'Freelancer OS',
+      href: '/shop/freelancer-os',
+      price: '$29',
+      description: 'Notion workspace with client CRM, keyword database, project tracker, and monthly reporting template. One-time $29 — no monthly software fees.',
+    },
+    keywords: ['notion template seo consultant', 'freelance seo client management', 'seo consultant business system notion'],
+  },
+
+  'wedding-planners': {
+    title: 'Freelance Wedding Planners',
+    noun: 'wedding planner',
+    headline: 'Every Detail Tracked. Every Vendor Confirmed. Every Client Impressed.',
+    subheadline:
+      'Notion templates for independent wedding planners and event coordinators who want a professional client management system that handles the complexity of multi-vendor, multi-month engagements.',
+    pains: [
+      'Vendor contact lists and contracts spread across email, texts, spreadsheets, and a folder on your desktop',
+      'Clients who text you at 11pm asking "what\'s the status of the florist?"',
+      'Timeline and budget details living in your head instead of a shared document',
+      'Onboarding each new couple from scratch — inconsistent and exhausting after the tenth time',
+    ],
+    benefits: [
+      {
+        heading: 'Per-wedding vendor tracker',
+        body: 'Log every vendor — caterer, florist, photographer, band, transport — with contact info, contract status, deposit paid, and balance due. One view shows you who is confirmed and who still needs a signed contract.',
+      },
+      {
+        heading: 'Budget tracker linked to vendors and payments',
+        body: 'Set the total budget, break it down by category, and log actual spend as deposits and invoices come in. Share a budget view with clients so "what did we spend so far?" has a one-click answer.',
+      },
+      {
+        heading: 'Shareable client portal for every couple',
+        body: 'Duplicate a Notion portal for each client and share it via link — no login required. They see the timeline, vendor list, checklist, and budget summary. Eliminates status check-in calls and late-night texts.',
+      },
+    ],
+    tools: ['Per-event vendor database with contract tracking', 'Budget tracker with category breakdown', 'Shareable client portal', 'Timeline and checklist template'],
+    testimonial: {
+      quote:
+        "I plan 15–20 weddings a year. Before Notion, vendor tracking was a spreadsheet I dreaded opening. Now every event has its own hub — vendors, budget, timeline, and a client portal they can check anytime. My clients think I have a full team behind me.",
+      name: 'Elena B.',
+      role: 'Independent wedding planner, 8 years',
+    },
+    primaryProduct: {
+      name: 'Client Onboarding Bundle',
+      href: '/shop/client-onboarding-bundle',
+      price: '$19',
+      description: 'Proposal template, project brief, welcome packet, and kickoff agenda — everything you need to onboard each new couple professionally from day one.',
+    },
+    keywords: ['notion template wedding planner', 'event planner client management system', 'freelance wedding planner business tools'],
+  },
 }
 
 export function generateStaticParams() {

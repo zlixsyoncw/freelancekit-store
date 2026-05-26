@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { DollarSign, Calculator, Mail, FileText, Receipt, ArrowRight } from 'lucide-react'
+import { DollarSign, Calculator, Mail, FileText, Receipt, Briefcase, ArrowRight } from 'lucide-react'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -54,6 +54,14 @@ const TOOLS = [
     description: 'Fill in your details and line items. Get a formatted plain-text invoice you can copy directly into any email. Free, no account.',
     badge: 'Free',
     color: 'bg-violet-50 text-violet-600',
+  },
+  {
+    href: '/tools/proposal-generator',
+    icon: Briefcase,
+    name: 'Proposal Generator',
+    description: 'Fill in your project details and get a professional, copy-paste proposal in minutes. Covers scope, deliverables, timeline, pricing, and payment terms.',
+    badge: 'Free',
+    color: 'bg-orange-50 text-orange-600',
   },
 ]
 

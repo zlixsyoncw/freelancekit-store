@@ -7,6 +7,7 @@ const NICHES = [
   'designers', 'developers', 'copywriters', 'consultants', 'photographers',
   'coaches', 'marketers', 'virtual-assistants', 'writers', 'social-media-managers',
   'video-editors', 'accountants', 'translators', 'ux-researchers', 'project-managers',
+  'bookkeepers', 'seo-consultants', 'wedding-planners',
 ]
 
 const NOTION_PROFESSIONS = [
@@ -29,12 +30,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/tools/email-scripts`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE.url}/tools/contract-clauses`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE.url}/tools/invoice-template`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE.url}/tools/proposal-generator`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE.url}/notion-template`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${SITE.url}/pricing`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE.url}/compare`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE.url}/free`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE.url}/resources`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE.url}/affiliate`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${SITE.url}/wall-of-love`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE.url}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
     { url: `${SITE.url}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.2 },
     { url: `${SITE.url}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.2 },
