@@ -6,6 +6,14 @@ import { SITE } from '@/lib/site'
 const NICHES = [
   'designers', 'developers', 'copywriters', 'consultants', 'photographers',
   'coaches', 'marketers', 'virtual-assistants', 'writers', 'social-media-managers',
+  'video-editors', 'accountants', 'translators', 'ux-researchers', 'project-managers',
+]
+
+const NOTION_PROFESSIONS = [
+  'freelance-designers', 'freelance-developers', 'freelance-copywriters',
+  'freelance-consultants', 'freelance-photographers', 'freelance-coaches',
+  'freelance-marketers', 'freelance-writers', 'freelance-video-editors',
+  'freelance-project-managers', 'virtual-assistants', 'social-media-managers',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -18,6 +26,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/tools`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE.url}/tools/rate-calculator`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE.url}/tools/project-estimator`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE.url}/tools/email-scripts`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE.url}/tools/contract-clauses`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE.url}/tools/invoice-template`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE.url}/notion-template`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${SITE.url}/pricing`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE.url}/compare`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE.url}/free`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
@@ -49,5 +61,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [...staticPages, ...productPages, ...blogPages, ...nichePages]
+  const notionProfessionPages: MetadataRoute.Sitemap = NOTION_PROFESSIONS.map((prof) => ({
+    url: `${SITE.url}/notion-template/${prof}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
+  return [...staticPages, ...productPages, ...blogPages, ...nichePages, ...notionProfessionPages]
 }

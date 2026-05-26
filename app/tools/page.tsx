@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { DollarSign, Calculator, ArrowRight } from 'lucide-react'
+import { DollarSign, Calculator, Mail, FileText, Receipt, ArrowRight } from 'lucide-react'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Free Freelance Tools — Rate Calculator, Project Estimator & More',
-  description: 'Free tools for freelancers: hourly rate calculator, project price estimator, and more. No signup required.',
+  title: 'Free Freelance Tools — Rate Calculator, Invoice Template, Email Scripts & More',
+  description: 'Free tools for freelancers: hourly rate calculator, invoice template generator, project price estimator, email scripts, and contract clauses library. No signup required.',
   alternates: { canonical: `${SITE.url}/tools` },
   openGraph: {
     title: 'Free Freelance Tools — FreelanceKit',
-    description: 'Free tools to help freelancers price their work, estimate projects, and build a more profitable practice.',
+    description: 'Free tools to help freelancers price their work, estimate projects, write emails, and build better contracts.',
     url: `${SITE.url}/tools`,
   },
 }
@@ -31,6 +31,30 @@ const TOOLS = [
     badge: 'Free',
     color: 'bg-amber-50 text-amber-600',
   },
+  {
+    href: '/tools/email-scripts',
+    icon: Mail,
+    name: 'Freelance Email Scripts',
+    description: '25 copy-paste email templates for proposals, late payments, scope creep, client wrap-ups, and more. Click to copy.',
+    badge: 'Free',
+    color: 'bg-emerald-50 text-emerald-600',
+  },
+  {
+    href: '/tools/contract-clauses',
+    icon: FileText,
+    name: 'Contract Clauses Library',
+    description: '20+ contract clauses covering payment, scope, IP, termination, and legal protection. Copy any clause into your contracts.',
+    badge: 'Free',
+    color: 'bg-blue-50 text-blue-600',
+  },
+  {
+    href: '/tools/invoice-template',
+    icon: Receipt,
+    name: 'Invoice Template Generator',
+    description: 'Fill in your details and line items. Get a formatted plain-text invoice you can copy directly into any email. Free, no account.',
+    badge: 'Free',
+    color: 'bg-violet-50 text-violet-600',
+  },
 ]
 
 export default function ToolsPage() {
@@ -45,7 +69,7 @@ export default function ToolsPage() {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {TOOLS.map((tool) => {
           const Icon = tool.icon
           return (
