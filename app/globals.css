@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
-  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-mono: 'Fira Code', 'Cascadia Code', monospace;
 }
 
@@ -20,20 +20,22 @@
   body {
     font-family: var(--font-body);
     color: #1a1523;
-    background: #fdfcfb;
+    background: #faf8f5;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    font-weight: 700;
+    font-variation-settings: 'opsz' 72;
   }
 
-  /* Prose styling for blog post content */
+  /* Prose styling */
   .prose h2 {
-    @apply font-display text-2xl font-bold text-ink mt-10 mb-4;
+    @apply font-display text-2xl font-semibold text-ink mt-10 mb-4;
+    font-variation-settings: 'opsz' 48;
   }
   .prose h3 {
-    @apply font-display text-xl font-semibold text-ink mt-8 mb-3;
+    @apply font-display text-xl font-medium text-ink mt-8 mb-3;
+    font-variation-settings: 'opsz' 36;
   }
   .prose p {
     @apply text-sand-800 leading-relaxed mb-5;
@@ -71,14 +73,125 @@
   }
 }
 
+/* ─── Scroll reveal system ─────────────────────────────────────────────── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.96) translateY(12px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* Horizontal rule that draws in from left */
+.line-draw {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.line-draw.visible {
+  transform: scaleX(1);
+}
+
+/* Stagger delays — apply to items within staggered grids */
+.reveal-delay-1 { transition-delay: 60ms; }
+.reveal-delay-2 { transition-delay: 120ms; }
+.reveal-delay-3 { transition-delay: 180ms; }
+.reveal-delay-4 { transition-delay: 240ms; }
+.reveal-delay-5 { transition-delay: 300ms; }
+.reveal-delay-6 { transition-delay: 360ms; }
+
+/* ─── Hero load animation (fires on paint, not scroll) ─────────────────── */
+
+.hero-line {
+  overflow: hidden;
+  display: block;
+}
+
+.hero-line-inner {
+  display: block;
+  animation: heroReveal 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes heroReveal {
+  from {
+    transform: translateY(108%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ─── Floating orb background animations ───────────────────────────────── */
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(16px, -22px) scale(1.03); }
+  66%       { transform: translate(-12px, 14px) scale(0.97); }
+}
+
+.orb-float {
+  animation: orbFloat 16s ease-in-out infinite;
+}
+
+.orb-float-slow {
+  animation: orbFloat 22s ease-in-out infinite reverse;
+}
+
+/* ─── Navbar scroll state ───────────────────────────────────────────────── */
+
+.nav-transparent {
+  background: transparent;
+  border-bottom-color: transparent;
+}
+
+.nav-filled {
+  background: rgba(250, 248, 245, 0.94);
+  border-bottom-color: rgba(221, 213, 200, 0.5);
+  box-shadow: 0 1px 16px rgba(26, 21, 35, 0.06);
+}
+
 @layer utilities {
   .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-150 { animation-delay: 150ms; }
   .animate-delay-200 { animation-delay: 200ms; }
   .animate-delay-300 { animation-delay: 300ms; }
   .animate-delay-400 { animation-delay: 400ms; }
   .animate-delay-500 { animation-delay: 500ms; }
+  .animate-delay-600 { animation-delay: 600ms; }
+  .animate-delay-700 { animation-delay: 700ms; }
+  .animate-delay-800 { animation-delay: 800ms; }
 
-  .opacity-0-initial {
-    opacity: 0;
+  .text-balance { text-wrap: balance; }
+
+  .font-display-opsz-lg {
+    font-family: var(--font-display);
+    font-variation-settings: 'opsz' 72;
+  }
+  .font-display-opsz-xl {
+    font-family: var(--font-display);
+    font-variation-settings: 'opsz' 144;
   }
 }

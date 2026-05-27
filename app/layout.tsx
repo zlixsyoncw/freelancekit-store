@@ -3,6 +3,7 @@ import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ScrollObserver from '@/components/ScrollObserver'
 import { SITE } from '@/lib/site'
 
 const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? 'freelancekit.co'
@@ -85,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
         />
 
+        <ScrollObserver />
         <Navbar />
         <main className="flex-1 pt-16">{children}</main>
         <Footer />

@@ -24,9 +24,9 @@ const config: Config = {
           950: '#3b0764',
         },
         sand: {
-          50:  '#fdfcfb',
-          100: '#f8f4ef',
-          200: '#ede8e0',
+          50:  '#faf8f5',
+          100: '#f5f0e8',
+          200: '#ede5d8',
           300: '#ddd5c8',
           400: '#c8bfb0',
           500: '#b5a898',
@@ -38,26 +38,36 @@ const config: Config = {
         ink: '#1a1523',
       },
       fontFamily: {
-        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
-        body: ['var(--font-body)', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-mono)', 'monospace'],
+        display: ['var(--font-display)', 'Georgia', 'serif'],
+        body:    ['var(--font-body)', 'system-ui', 'sans-serif'],
+        mono:    ['var(--font-mono)', 'monospace'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'noise': "url('/noise.svg')",
       },
       animation: {
-        'fade-up': 'fadeUp 0.5s ease-out forwards',
-        'fade-in': 'fadeIn 0.4s ease-out forwards',
+        'fade-up':     'fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'fade-in':     'fadeIn 0.5s ease-out forwards',
+        'hero-reveal': 'heroReveal 1.1s cubic-bezier(0.16, 1, 0.3, 1) both',
+        'orb-float':   'orbFloat 16s ease-in-out infinite',
       },
       keyframes: {
         fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(16px)' },
+          '0%':   { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         fadeIn: {
-          '0%': { opacity: '0' },
+          '0%':   { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        heroReveal: {
+          '0%':   { transform: 'translateY(108%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)',    opacity: '1' },
+        },
+        orbFloat: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '33%':      { transform: 'translate(16px, -22px) scale(1.03)' },
+          '66%':      { transform: 'translate(-12px, 14px) scale(0.97)' },
         },
       },
     },
